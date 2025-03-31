@@ -7,8 +7,8 @@ import { TextHoverEffectDemo } from "@/data/data";
 
 
 export default function Footer() {
-	const phrase = ["*", "Social Content", "EXPERTS."];
-	const phrase1 = ["#bombin'", ""];
+	const phrase = ["*", "REV UP", "YOUR BRAND."];
+	const phrase1 = ["#RevItUp", ""];
 	return (
 		<footer className="w-full min-h-screen padding-x z-30 relative pt-[40px] bg-black flex flex-col justify-between rounded-t-[20px] mt-[-20px]">
 			<div className="w-full flex justify-between sm:flex-col xm:flex-col">

@@ -30,9 +30,9 @@ export default function Navbar() {
         <div className="w-[60%]">
           <Link href={"/"}>
             <Image
-              src="/nukename2.png"
+              src="/revnav.png"
               alt="nuke logo"
-              width={120}
+              width={110}
               height={140}
             />
           </Link>

@@ -3,12 +3,13 @@ import { motion } from 'framer-motion';
 
 export default function Hero() {
   return (
-    <main className="w-full h-screen overflow-hidden relative">
-      <Spline scene="https://prod.spline.design/qspgYwptxDY4ANel/scene.splinecode"
-       
+    <main className="w-full h-screen overflow-hidden relative bg-black">
+      <Spline
+        scene="https://prod.spline.design/qspgYwptxDY4ANel/scene.splinecode"
         className="w-full h-full"
       />
-      
+
+      {/* Scroll Down Animation */}
       <motion.div
         className="absolute bottom-10 left-[46%] transform -translate-x-1/2 flex flex-col items-center"
         initial={{ opacity: 0, y: 20 }}
@@ -33,6 +34,16 @@ export default function Hero() {
           </svg>
         </motion.div>
       </motion.div>
+
+      {/* Bottom-right Rectangle with Logo */}
+      <div className="absolute bottom-5 right-5 w-[150px] h-10 bg-[#DBDBDB] border border-[#DBDBDB] rounded-xl flex items-center justify-center">
+        {/* Logo Image */}
+        <img
+          src="/revnav.png" // Update this path to your logo's actual path
+          alt="Logo"
+          className="h-12" // Adjust height as needed
+        />
+      </div>
     </main>
   );
 }
