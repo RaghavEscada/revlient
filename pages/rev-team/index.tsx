@@ -32,18 +32,18 @@ const teamMembers = [
 
 export default function MeetOurTeam() {
   const [index, setIndex] = useState(0);
-  
-  const nextSlide = () => {
-    setIndex((prev) => (prev + 1) % teamMembers.length);
-  };
-  
+
   const prevSlide = () => {
-    setIndex((prev) => (prev - 1 + teamMembers.length) % teamMembers.length);
+    setIndex((prevIndex) => (prevIndex - 1 + teamMembers.length) % teamMembers.length);
   };
-  
+
+  const nextSlide = () => {
+    setIndex((prevIndex) => (prevIndex + 1) % teamMembers.length);
+  };
+
   return (
     <section className="relative h-screen w-full flex flex-col justify-center items-center bg-white text-black pt-24">
-      <Curve backgroundColor={"#f1f1f1"} children={undefined} />
+     
       <h1 className="absolute top-20 text-5xl font-bold tracking-wide text-gray-800">Meet Our Team</h1>
       <AnimatePresence mode="wait">
         <motion.div
@@ -96,5 +96,6 @@ export default function MeetOurTeam() {
         <ChevronRight className="w-10 h-10 text-gray-700" />
       </button>
     </section>
+    
   );
 }
