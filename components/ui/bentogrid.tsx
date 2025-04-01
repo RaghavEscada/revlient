@@ -111,7 +111,7 @@ export const SkeletonOne = () => {
         <div className="flex flex-1 w-full h-full flex-col space-y-2  ">
           {/* TODO */}
           <Image
-            src="/group.jpeg"
+            src="/devadi.jpeg"
             alt="header"
             width={800}
             height={800}
@@ -129,7 +129,7 @@ export const SkeletonOne = () => {
 export const SkeletonThree = () => {
   return (
     <Link
-      href="https://www.youtube.com/watch?v=Va2KQnDwaHc"
+      href="https://www.youtube.com/@thefutur"
       target="__blank"
       className="relative flex gap-10  h-full group/image"
     >
@@ -138,7 +138,7 @@ export const SkeletonThree = () => {
           {/* TODO */}
           <IconBrandYoutubeFilled className="h-20 w-20 absolute z-10 inset-0 text-red-500 m-auto " />
           <Image
-            src="/bento.jpg"
+            src="/thefutur.png"
             alt="header"
             width={800}
             height={800}
@@ -155,8 +155,9 @@ export const SkeletonTwo = () => {
     "/team1.jpeg",
     "/team2.jpeg",
     "/team3.jpeg",
-    "/team4.jpeg",
+    "/team2.jpeg",
     "/team1.jpeg",
+    "/team2.jpeg"
   ];
 
   const imageVariants = {
