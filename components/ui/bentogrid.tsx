@@ -26,7 +26,7 @@ export function FeaturesSectionDemo() {
       className: "border-b col-span-1 lg:col-span-2 dark:border-neutral-800",
     },
     {
-      title: "Watch our craft on YouTube",
+      title: "Our Prime Inspiration & Method of Craft",
       description:
         "Transforming visions into reality – We craft powerful brand stories, sleek visuals, and high-impact digital campaigns that captivate your internet audience.",
       skeleton: <SkeletonThree />,
