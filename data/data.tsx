@@ -2,13 +2,14 @@ import { AnimatedTestimonials } from "@/components/ui/animated-testimonials";
 import { Timeline } from "@/components/ui/timeline";
 import { TextHoverEffect } from "@/components/ui/text-hover-effect";
 import { WavyBackground } from "@/components/ui/wavy-background";
+import { LampContainer } from "@/components/ui/lamp";
 
 
 
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { useScroll, useTransform } from "motion/react";
+import { motion, useScroll, useTransform } from "motion/react";
 
 
 export function AnimatedTestimonialsDemo() {
@@ -68,25 +69,25 @@ export function TimelineDemo() {
             Built and launched Nuke scratch. Before crafting any strategy, we take the time to deeply understand your business, goals, and audience. Our team conducts thorough market research to align our approach with your brand identity.
           </p>
           <div className="flex justify-end">
-          <Image
-  src="/latest1.png"
-  alt="startup template"
-  width={200}  // Change this to your desired size
-  height={200} // Change this to your desired size
-  layout="intrinsic" 
-/>
+            <Image
+              src="/latest1.png"
+              alt="startup template"
+              width={200}  // Change this to your desired size
+              height={200} // Change this to your desired size
+              layout="intrinsic"
+            />
 
 
-<Image
-  src="/nuke.png"
-  alt="startup template"
-  width={200}  // Change this to your desired size
-  height={200} // Change this to your desired size
-  layout="intrinsic" 
-/>
-            
-           
-           
+            <Image
+              src="/nuke.png"
+              alt="startup template"
+              width={200}  // Change this to your desired size
+              height={200} // Change this to your desired size
+              layout="intrinsic"
+            />
+
+
+
           </div>
         </div>
       ),
@@ -104,26 +105,26 @@ export function TimelineDemo() {
             not. Here are some more example of beautiful designs I built.
           </p>
           <div className="flex justify-end">
-          <Image
-  src="/latest1.png"
-  alt="startup template"
-  width={200}  // Change this to your desired size
-  height={200} // Change this to your desired size
-  layout="intrinsic" 
-/>
+            <Image
+              src="/latest1.png"
+              alt="startup template"
+              width={200}  // Change this to your desired size
+              height={200} // Change this to your desired size
+              layout="intrinsic"
+            />
 
 
-<Image
-  src="/nuke.png"
-  alt="startup template"
-  width={200}  // Change this to your desired size
-  height={200} // Change this to your desired size
-  layout="intrinsic" 
-/>
-       
-           
-           
-            
+            <Image
+              src="/nuke.png"
+              alt="startup template"
+              width={200}  // Change this to your desired size
+              height={200} // Change this to your desired size
+              layout="intrinsic"
+            />
+
+
+
+
           </div>
         </div>
       ),
@@ -153,23 +154,23 @@ export function TimelineDemo() {
             </div>
           </div>
           <div className="flex justify-end">
-          <Image
-  src="/latest1.png"
-  alt="startup template"
-  width={200}  // Change this to your desired size
-  height={200} // Change this to your desired size
-  layout="intrinsic" 
-/>
+            <Image
+              src="/latest1.png"
+              alt="startup template"
+              width={200}  // Change this to your desired size
+              height={200} // Change this to your desired size
+              layout="intrinsic"
+            />
 
 
-<Image
-  src="/nuke.png"
-  alt="startup template"
-  width={200}  // Change this to your desired size
-  height={200} // Change this to your desired size
-  layout="intrinsic" 
-/>
-       
+            <Image
+              src="/nuke.png"
+              alt="startup template"
+              width={200}  // Change this to your desired size
+              height={200} // Change this to your desired size
+              layout="intrinsic"
+            />
+
           </div>
         </div>
       ),
@@ -184,9 +185,14 @@ export function TimelineDemo() {
 
 export function TextHoverEffectDemo() {
   return (
-    <div className="h-[40rem] flex items-center justify-center">
-      <TextHoverEffect text="NUKE." />
+    <div className="h-[40rem] flex text-9xl items-center justify-center relative">
+    <div className="h-[40rem] text-4xl flex items-center justify-center absolute">
+      <TextHoverEffect text="REVLIENT." />
     </div>
+    <TextHoverEffect text="REVLIENT." />
+  </div>
+
+
   );
 }
 
@@ -245,14 +251,36 @@ export function WavyBackgroundDemo() {
   return (
     <WavyBackground className="max-w-4xl mx-auto pb-40">
       <p className="text-2xl md:text-4xl lg:text-7xl text-white font-bold inter-var text-center">
-       
+
       </p>
       <p className="text-base md:text-lg mt-4 text-white font-normal inter-var text-center">
-      
+
       </p>
     </WavyBackground>
   );
+};
+
+
+export function LampDemo() {
+  return (
+    <LampContainer>
+      <motion.h1
+        initial={{ opacity: 0.5, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{
+          delay: 0.3,
+          duration: 0.8,
+          ease: "easeInOut",
+        }}
+        className="mt-8 bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center text-[150px] font-medium tracking-tight text-transparent md:text-7xl"
+      >
+        SERVICES <br />
+      </motion.h1>
+      <p className="pt-4 font-NeueMontreal text-white">Crafts by Revlient</p>
+    </LampContainer>
+  );
 }
+
 
 
 

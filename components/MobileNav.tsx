@@ -15,7 +15,7 @@ export default function MobileNav() {
 			<div className="w-full hidden justify-between items-center h-[8vh] padding-x sm:flex xm:flex md:flex">
 				<Link href={"/"}>
 					<Image
-						src="/nukename2.png"
+						src="/revnav.png"
 						alt="nukemarketing"
 						width={70}
 						height={70}
@@ -37,7 +37,7 @@ export default function MobileNav() {
 						<div className="w-full flex justify-between items-center h-[8vh] border-b border-[#f1f1f155] padding-x">
 							<Link href={"/"}>
 								<Image
-									src="/nuke.png"									alt="nuke marketing"
+									src="/revnav.png"									alt="nuke marketing"
 									width={70}
 									height={70}
 								/>

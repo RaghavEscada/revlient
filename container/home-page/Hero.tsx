@@ -5,8 +5,8 @@ export default function Hero() {
   return (
     <main className="w-full h-screen overflow-hidden relative bg-black">
       <Spline
-        scene="https://prod.spline.design/qspgYwptxDY4ANel/scene.splinecode"
-        className="w-full h-full"
+        scene="https://prod.spline.design/qspgYwptxDY4ANel/scene.splinecode" 
+        className='w-full h-full'
       />
 
       {/* Scroll Down Animation */}
@@ -36,12 +36,12 @@ export default function Hero() {
       </motion.div>
 
       {/* Bottom-right Rectangle with Logo */}
-      <div className="absolute bottom-5 right-5 w-[150px] h-10 bg-[#DBDBDB] border border-[#DBDBDB] rounded-xl flex items-center justify-center">
+      <div className="absolute w-full bottom-0 right-0  h-30 rounded-3xl bg-black border border-[#DBDBDB] rounde flex items-center justify-center">
         {/* Logo Image */}
         <img
-          src="/revnav.png" // Update this path to your logo's actual path
+          src="/revlogo.png" // Update this path to your logo's actual path
           alt="Logo"
-          className="h-12" // Adjust height as needed
+          className="h-[70px] w-[70px]" // Adjust height as needed
         />
       </div>
     </main>

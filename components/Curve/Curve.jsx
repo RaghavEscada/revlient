@@ -5,15 +5,15 @@ import { useEffect, useState } from "react";
 import { text, curve, translate } from "@/motion";
 
 const routes = {
-	"/": "Nuke Marketing",
+	"/": "Welcome to Revlient",
 	"/services": "Craft is the heart of creativity.",
 	"/nuke-works": "Mastery is in the details.",
 	"/nuke-team": "Content is king, engagement is queen",
 	"/insights": "Stand out or fade out.",
 	"/contact": "Create. Refine. Repeat.",
 	"/case": "Workiz Easy",
-	"/core":"Scroll to check out our core expertise.",
-	"/playground" : "click and drag!"
+	
+	
 };
 
 const anim = (variants) => {

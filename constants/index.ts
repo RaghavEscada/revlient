@@ -1,4 +1,4 @@
-import { capaybilities1, capaybilities2, capaybilities3, capaybilities4, client01, client02, client03, client04, client05, client06, client07, client08, client09, insights1, insights2, insights3, latest1, latest2, nestle, officevibe, phase1, phase2, phase3, phase4, phase5, planetly, project1, project2, project3, project4, project5, project6, project7, project8, project9, publication1, publication2, publication3 } from "@/public";
+import { capaybilities1, capaybilities2, capaybilities3, capaybilities4, client01, client02, client03, client04, client05, client06, client07, client08, client09, insights1, insights2, insights3, latest1, latest2, nestle, officevibe, phase1, phase2, phase3, phase4, phase5, planetly, project1, project2, project3, project4, project5, publication1, publication2, publication3 } from "@/public";
 
 
 // Navbar
@@ -39,13 +39,13 @@ export const footerItems = [
    {
       id: 1,
       title: "Instagram",
-      href: "https://www.instagram.com/nuke_marketing_/",
+      href: "https://www.instagram.com/revlient/",
    },
 
    {
       id: 4,
       title: "Linkedin",
-      href: "https://www.linkedin.com/company/nuke-marketing7/",
+      href: "https://www.linkedin.com/in/devjithanoop?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
    },
 ];
 
@@ -63,28 +63,20 @@ export const footernavbarItems = [
    {
       id: 3,
       title: "Our work",
-      href: "nuke-works",
+      href: "rev-works",
    },
    {
       id: 4,
-      title: "About us",
-      href: "nuke-team",
+      title: "Team",
+      href: "rev-team",
    },
-   {
-      id: 5,
-      title: "Insights",
-      href: "insights",
-   },
+  
    {
       id: 6,
       title: "Contact us",
       href: "contact",
    },
-   {
-      id: 7,
-      title: "playground",
-      href: "playground",
-   },
+   
 ];
 
 export const clientsItem = [
@@ -955,7 +947,7 @@ export const presentationProjectItem = [
    {
       id: 5,
       title: "black box",
-      src: project8,
+      src: project2,
       href: "/case/",
       links: [
          {
@@ -996,7 +988,7 @@ export const presentationProjectItem = [
    {
       id: 7,
       title: "soft start",
-      src: project9,
+      src: project5,
       href: "/case/",
       links: [
          {
@@ -1014,7 +1006,7 @@ export const presentationProjectItem = [
    {
       id: 8,
       title: "officevibe",
-      src: project7,
+      src: project3,
       href: "/case/",
       links: [
          {
@@ -1027,7 +1019,7 @@ export const presentationProjectItem = [
    {
       id: 9,
       title: "workiz easy",
-      src: project6,
+      src: project4,
       href: "/case/",
       links: [
          {
@@ -1128,7 +1120,7 @@ export const workizItem = [
    {
       id: 1,
       title: "office vibe",
-      src: project7,
+      src: project1,
       href: "/case/",
       links: [
          {
@@ -1237,100 +1229,128 @@ export const aboutPartberItems = [
 export const FaqItems = [
    {
       id: 1,
-      question: "How do you approach brand strategy?",
+      question: "How do you approach social media marketing?",
       title: "Description",
-      description: "We take a deep dive into your brand’s vision, values, and target audience to craft a strategic roadmap. Our process ensures a strong brand identity that resonates with your audience and drives long-term success.",
+      description: "We create customized social media strategies tailored to your brand’s goals. From content creation to audience engagement and paid advertising, we ensure your brand stands out online and drives real business results.",
       links: [
          {
             id: 1,
             title: 1,
-            description: "We conduct market research, competitive analysis, and brand positioning to ensure your brand stands out."
+            description: "Our team leverages data-driven insights to optimize content and maximize engagement across all platforms."
          },
          {
             id: 2,
             title: 2,
-            description: "Our team works collaboratively to align your branding with business goals and customer expectations."
-         },
-      ],
-      button: "read"
-   },
-   {
-      id: 2,
-      question: "Do you offer logo and visual identity design?",
-      title: "Description",
-      description: "Yes! A brand’s visual identity is crucial for recognition and consistency. We craft logos, typography, color palettes, and other design assets to build a cohesive and memorable brand image.",
-      links: [
-         {
-            id: 1,
-            title: 1,
-            description: "Our design team ensures every visual element aligns with your brand’s story and values."
-         },
-      ],
-      button: "read"
-   },
-   {
-      id: 3,
-      question: "Do you collaborate with other creative agencies?",
-      title: "Description",
-      description: "Absolutely! We partner with specialists in web design, animation, content creation, and other fields to deliver comprehensive branding solutions. Our goal is to provide top-tier work that enhances your brand."
-      ,
-      links: [
-         {
-            id: 1,
-            title: 1,
-            description: "Collaboration allows us to push creative boundaries and bring innovative branding ideas to life."
-         },
-      ],
-      button: "read"
-   },
-   {
-      id: 4,
-      question: "Are you hiring creative professionals?",
-      title: "Description",
-      description: "Yes! We’re always on the lookout for talented designers, strategists, and marketers to join our team. If you’re passionate about branding and storytelling, we’d love to hear from you!",
-      links: [
-         {
-            id: 1,
-            title: 1,
-            description: "Send your portfolio and CV to careers@brandagency.com with ‘Creative Talent’ in the subject line."
-         },
-         {
-            id: 2,
-            title: 2,
-            description: "If you have expertise in marketing, strategy, or business development, reach out to us at hr@brandagency.com."
-         },
-      ],
-      button: "read"
-   },
-   {
-      id: 5,
-      question: "Do you offer brand workshops or training?",
-      title: "Description",
-      description: "Yes, we conduct branding workshops and training sessions for teams and organizations. Our goal is to educate businesses on effective branding strategies that drive growth and engagement.",
-      links: [
-         {
-            id: 1,
-            title: 1,
-            description: "Workshops include brand positioning, storytelling, and visual identity creation."
-         },
-         {
-            id: 2,
-            title: 2,
-            description: "We also offer one-on-one brand consultations tailored to your specific needs."
+            description: "We design targeted ad campaigns that enhance brand awareness and generate leads."
          },
       ],
       button: "read"
    },
    {
       id: 6,
-      question: "Would you be open to podcast or video collaborations?",
+      question: "What is the typical project timeline?",
       title: "Description",
-      description: "Definitely! We love sharing our branding insights through podcasts and video content. If you have an audience interested in branding, design, or marketing, let’s collaborate!",
+      description: "The timeline for completing a project varies depending on its complexity. For social media management, we typically work on a 3-month cycle. For website design, the project duration ranges from 1 to 4 weeks based on the scope and requirements. A detailed timeline will be provided after the initial consultation and project scoping.",
       links: [
          {
             id: 1,
             title: 1,
-            description: "Reach out with your proposal at media@brandagency.com with ‘Podcast/Video Proposal’ in the subject."
+            description: "Reach out with your proposal at partnerships@smmaagency.com with ‘Collaboration Proposal’ in the subject."
+         },
+      ],
+      button: "read"
+   },
+   {
+      id: 6,
+      question: "What is the typical project cost?",
+      title: "Description",
+      description: "The cost of a project depends on its complexity and scope. For social media management services, pricing starts from ₹30,000 and can go up to ₹10,00,000 depending on the scale of the campaign. Website design services typically range from ₹30,000 to ₹1,50,000 based on the features and requirements. Software solutions and development services follow the same price range of ₹30,000 to ₹1,50,000, with more complex projects reaching up to ₹10,00,000. A more accurate estimate will be provided after the initial consultation and project assessment",
+      links: [
+         {
+            id: 1,
+            title: 1,
+            description: "Reach out with your proposal at partnerships@smmaagency.com with ‘Collaboration Proposal’ in the subject."
+         },
+      ],
+      button: "read"
+   },
+   {
+      id: 2,
+      question: "Do you offer website developmen and revamping?",
+      title: "Description",
+      description: "Yes! We build high-performing, visually stunning websites that are SEO-optimized and designed to convert visitors into customers. Our websites are mobile-friendly, fast, and tailored to your business needs.",
+      links: [
+         {
+            id: 1,
+            title: 1,
+            description: "We create custom websites, landing pages, and e-commerce platforms that reflect your brand’s identity."
+         },
+      ],
+      button: "read"
+   },
+   
+   {
+      id: 3,
+      question: "How do you develop brand identity?",
+      title: "Description",
+      description: "We craft compelling brand identities that resonate with your audience. From logo design to brand messaging, we ensure consistency across all digital and physical touchpoints.",
+      links: [
+         {
+            id: 1,
+            title: 1,
+            description: "Our branding process includes logo design, typography, color palettes, and brand voice development."
+         },
+      ],
+      button: "read"
+   },
+   {
+      id: 4,
+      question: "Do you provide software solutions?",
+      title: "Description",
+      description: "Yes! We develop custom software solutions, including automation tools, CRM systems, and AI-driven applications to streamline your business operations and enhance efficiency.",
+      links: [
+         {
+            id: 1,
+            title: 1,
+            description: "We build scalable and secure software tailored to your business needs."
+         },
+         {
+            id: 2,
+            title: 2,
+            description: "Our team integrates AI and automation to optimize workflows and improve productivity."
+         },
+      ],
+      button: "read"
+   },
+   {
+      id: 5,
+      question: "Do you offer social media training or consultations?",
+      title: "Description",
+      description: "Yes, we provide one-on-one and team training sessions to help businesses leverage social media effectively. Our workshops cover content strategy, paid advertising, and growth hacking techniques.",
+      links: [
+         {
+            id: 1,
+            title: 1,
+            description: "We teach businesses how to build organic engagement and run high-ROI ad campaigns."
+         },
+         {
+            id: 2,
+            title: 2,
+            description: "Our consultations are tailored to your brand’s unique goals and challenges."
+         },
+      ],
+      button: "read"
+   },
+   {
+      id: 6,
+      question: "Are you open to partnerships and collaborations?",
+      title: "Description",
+      description: "Absolutely! We love collaborating with influencers, brands, and agencies to create impactful marketing campaigns and innovative digital solutions.",
+      links: [
+         {
+            id: 1,
+            title: 1,
+            description: "Reach out with your proposal at partnerships@smmaagency.com with ‘Collaboration Proposal’ in the subject."
          },
       ],
       button: "read"

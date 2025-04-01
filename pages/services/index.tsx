@@ -10,6 +10,8 @@ import {
 import { useEffect } from "react";
 import { Curve, Ready } from "@/components";
 import { AnimatedTestimonialsDemo } from "@/data/data";
+import { LampDemo } from "@/data/data";
+import { TimelineDemo } from "@/data/data";
 
 
 export default function Services() {
@@ -22,16 +24,9 @@ export default function Services() {
 	return (
 		<>
 			<Curve backgroundColor={"#f1f1f1"}>
-				<Heroservices />
-				
-				<Process />
+				<LampDemo/>
 				<Capibilyties />
 				<AnimatedTestimonialsDemo/>
-				
-
-			
-				<Archive />
-				<Expectations />
 				<Ready />
 			</Curve>
 		</>

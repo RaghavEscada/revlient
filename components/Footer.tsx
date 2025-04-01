@@ -40,28 +40,8 @@ export default function Footer() {
 								<h1 className="paragraph font-medium font-NeueMontreal text-white pb-[20px]">
 									Studio:
 								</h1>
-								<div className="flex flex-col gap-y-[10px]">
-									<LinkHover
-										className="before:h-[1px] after:h-[1px] w-fit paragraph font-medium text-white capitalize flex flex-col before:bottom-[1px] after:bottom-[1px]"
-										title={`No.01, 3rd Street,`}
-										href="https://www.google.com/maps/search/No.01,+3rd+Street,+Gurusamy+Nagar,+Anakaputhur,+Chennai+600070+in+gmp/@12.9701158,80.1287911,15z?entry=s&sa="
-									/>
-									<LinkHover
-										className="before:h-[1px] text-white  after:h-[1px] w-fit paragraph font-medium  capitalize flex flex-col before:bottom-[1px] after:bottom-[1px]"
-										title={`Gurusamy Nagar,`}
-										href="https://www.google.com/maps/search/No.01,+3rd+Street,+Gurusamy+Nagar,+Anakaputhur,+Chennai+600070+in+gmp/@12.9701158,80.1287911,15z?entry=s&sa="
-									/>
-									<LinkHover
-										className="before:h-[1px] text-white after:h-[1px] w-fit paragraph font-medium  capitalize flex flex-col before:bottom-[1px] after:bottom-[1px]"
-										title="Anakaputhur,"
-										href="https://www.google.com/maps/search/No.01,+3rd+Street,+Gurusamy+Nagar,+Anakaputhur,+Chennai+600070+in+gmp/@12.9701158,80.1287911,15z?entry=s&sa="
-									/>
-									<LinkHover
-										className="before:h-[1px] text-white  after:h-[1px] w-fit paragraph font-medium  capitalize flex flex-col before:bottom-[1px] after:bottom-[1px]"
-										title="Chennai-600070."
-										href="https://www.google.com/maps/search/No.01,+3rd+Street,+Gurusamy+Nagar,+Anakaputhur,+Chennai+600070+in+gmp/@12.9701158,80.1287911,15z?entry=s&sa=X"
-									/>
-								</div>
+								<div className="text-white">Based out of Kottayam, Kerala</div>
+								
 							</div>
 							<div className="pt-[50px]">
 								<h1 className="paragraph font-medium font-NeueMontreal text-white pb-[20px]">
@@ -83,12 +63,13 @@ export default function Footer() {
 							<h1 className="paragraph font-medium font-NeueMontreal text-white">
 								Contact Number :
 								<a
-									href="https://wa.me/919789985132?text=Dear%20Nuke%20Marketing%20Team%2C%20I%20hope%20you%20are%20doing%20well.%20I%20am%20interested%20in%20learning%20more%20about%20your%20services%20and%20ongoing%20projects.%20Could%20you%20please%20provide%20more%20details%20or%20let%20me%20know%20a%20suitable%20time%20to%20discuss%20further%3F%20Looking%20forward%20to%20your%20response.%20Best%20regards%2C%20Client"
+									href="https://wa.me/+916238714197?text=Dear%20Revlient%20Marketing%20Team%2C%20I%20hope%20you%20are%20doing%20well.%20I%20am%20interested%20in%20learning%20more%20about%20your%20services%20and%20ongoing%20projects.%20Could%20you%20please%20provide%20more%20details%20or%20let%20me%20know%20a%20suitable%20time%20to%20discuss%20further%3F%20Looking%20forward%20to%20your%20response.%20Best%20regards%2C%20Client"
 									target="_blank"
 									rel="noopener noreferrer"
 									className="text-green-600 font-bold underline"
 								>
-									+91 97899 85132
+									<br/>
+									+91 6238714197 | +91 8590709204
 								</a>
 							</h1>
 
@@ -96,8 +77,8 @@ export default function Footer() {
 								Email ID:
 							</h1>
 							<LinkHover
-								title="nukemarketing7@gmail.com"
-								href="nukemarketing7@gmail.com"
+								title="connect@revlient.com"
+								href="connect@revlient.com"
 								className="before:h-[1px] after:h-[1px] paragraph font-medium before:bottom-[-3px] after:bottom-[-3px]"
 							/>
 
@@ -114,8 +95,8 @@ export default function Footer() {
 				<div className="w-1/2 sm:w-full xm:w-full">
 					<Link href={"/"}>
 						<Image
-							src="/nukename2.png"
-							alt="nuke logo"
+							src="/revnav.png"
+							alt="rev logo"
 							width={250}
 							height={250}
 						/>
@@ -125,7 +106,7 @@ export default function Footer() {
 				<div className="w-1/2 h-full flex gap-[10px] justify-between items-end sm:w-full xm:w-full sm:flex-col xm:flex-col sm:items-start xm:items-start">
 					<div className="flex sm:flex-col xm:flex-col gap-[10px]">
 						<h1 className="paragraph font-medium font-NeueMontreal text-white opacity-40">
-							© Nuke Marketing 2025.
+							© Revlient 2025.
 						</h1>
 						<LinkHover
 							title="Legal Terms"
@@ -147,7 +128,7 @@ export default function Footer() {
 				</div>
 
 			</div>
-			<div className="w-full bottom-10 left-0 z-50 bg-black">
+			<div className="w-full bottom-0 left-0 z-50 bg-black">
 				<TextHoverEffectDemo />
 			</div>
 		</footer>

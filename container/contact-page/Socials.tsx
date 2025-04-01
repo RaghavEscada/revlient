@@ -52,26 +52,7 @@ export default function Socials() {
 									Studio:
 								</h1>
 								<div className="flex flex-col gap-y-[10px]">
-									<LinkHover
-										className="before:h-[1px] after:h-[1px] w-fit paragraph font-medium  capitalize flex flex-col before:bottom-[1px] after:bottom-[1px]"
-										title={`No.01, 3rd Street,`}
-										href="/"
-									/>
-									<LinkHover
-										className="before:h-[1px] after:h-[1px] w-fit paragraph font-medium  capitalize flex flex-col before:bottom-[1px] after:bottom-[1px]"
-										title={`Gurusamy Nagar,`}
-										href="/"
-									/>
-									<LinkHover
-										className="before:h-[1px] after:h-[1px] w-fit paragraph font-medium  capitalize flex flex-col before:bottom-[1px] after:bottom-[1px]"
-										title="Anakaputhur,"
-										href="/"
-									/>
-									<LinkHover
-										className="before:h-[1px] after:h-[1px] w-fit paragraph font-medium  capitalize flex flex-col before:bottom-[1px] after:bottom-[1px]"
-										title="Chennai-6000070."
-										href="/"
-									/>
+									<p>Based out of Kottayam, Kerala</p>
 								</div>
 							</div>
 							<div className="flex w-fit h-fit gap-x-[5px] group">
@@ -79,12 +60,13 @@ export default function Socials() {
 								<h1 className="paragraph  font-NeueMontreal text-white font-bold">
 							Contact Number : 
   <a 
-    href="https://wa.me/919789985132?text=Dear%20Nuke%20Marketing%20Team%2C%20I%20hope%20you%20are%20doing%20well.%20I%20am%20interested%20in%20learning%20more%20about%20your%20services%20and%20ongoing%20projects.%20Could%20you%20please%20provide%20more%20details%20or%20let%20me%20know%20a%20suitable%20time%20to%20discuss%20further%3F%20Looking%20forward%20to%20your%20response.%20Best%20regards%2C%20Client" 
+    href="https://wa.me/919789985132?text=Dear%20Revlient%20Marketing%20Team%2C%20I%20hope%20you%20are%20doing%20well.%20I%20am%20interested%20in%20learning%20more%20about%20your%20services%20and%20ongoing%20projects.%20Could%20you%20please%20provide%20more%20details%20or%20let%20me%20know%20a%20suitable%20time%20to%20discuss%20further%3F%20Looking%20forward%20to%20your%20response.%20Best%20regards%2C%20Client" 
     target="_blank" 
     rel="noopener noreferrer"
     className="text-green-600 font-bold underline"
   >
-     +91 97899 85132
+     
+	 +91 6238714197 | +91 8590709204
   </a>
 </h1>
 								</div>

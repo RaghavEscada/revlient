@@ -215,7 +215,7 @@ export default function About() {
         </div>
         
         <div className="mt-16 text-center text-gray-500 text-sm">
-          <p>© 2025 Revlient. All rights reserved.</p>
+        <p>Explore More!</p>
         </div>
       </div>
     </section>
