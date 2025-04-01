@@ -61,123 +61,67 @@ export function AnimatedTestimonialsDemo() {
 export function TimelineDemo() {
   const data = [
     {
-      title: "Cliental Requirments",
+      title: "Client Requirements & Discovery",
       content: (
         <div>
-          <p className="text-white dark:text-yellow-300 text-xs md:text-sm font-normal mb-8">
-
-            Built and launched Nuke scratch. Before crafting any strategy, we take the time to deeply understand your business, goals, and audience. Our team conducts thorough market research to align our approach with your brand identity.
+          <p className="text-white dark:text-white text-lg md:text-xl font-normal mb-8">
+            Before crafting any strategy, we take the time to deeply understand your business, goals, and audience. Our team conducts thorough market research to align our approach with your brand identity.
           </p>
-          <div className="flex justify-end">
-            <Image
-              src="/latest1.png"
-              alt="startup template"
-              width={200}  // Change this to your desired size
-              height={200} // Change this to your desired size
-              layout="intrinsic"
-            />
-
-
-            <Image
-              src="/nuke.png"
-              alt="startup template"
-              width={200}  // Change this to your desired size
-              height={200} // Change this to your desired size
-              layout="intrinsic"
-            />
-
-
-
+          <div className="flex justify-end gap-4">
+            <Image src="/latest1.png" alt="Discovery Phase" width={250} height={250} layout="intrinsic" />
+            <Image src="/nuke.png" alt="Research Analysis" width={250} height={250} layout="intrinsic" />
           </div>
         </div>
       ),
     },
     {
-      title: "Impactful Solution Discussion",
+      title: "Strategy & Planning",
       content: (
         <div>
-          <p className="text-white dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
-            I usually run out of copy, but when I see content this big, I try to
-            integrate lorem ipsum.
+          <p className="text-white dark:text-white text-lg md:text-xl font-normal mb-8">
+            Our experts map out a strategic plan that includes content, branding, and tech solutions. Every decision is backed by data to ensure maximum impact.
           </p>
-          <p className="text-white dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
-            Lorem ipsum is for people who are too lazy to write copy. But we are
-            not. Here are some more example of beautiful designs I built.
-          </p>
-          <div className="flex justify-end">
-            <Image
-              src="/latest1.png"
-              alt="startup template"
-              width={200}  // Change this to your desired size
-              height={200} // Change this to your desired size
-              layout="intrinsic"
-            />
-
-
-            <Image
-              src="/nuke.png"
-              alt="startup template"
-              width={200}  // Change this to your desired size
-              height={200} // Change this to your desired size
-              layout="intrinsic"
-            />
-
-
-
-
+          <div className="flex justify-end gap-4">
+            <Image src="/latest1.png" alt="Strategy Session" width={250} height={250} layout="intrinsic" />
+            <Image src="/nuke.png" alt="Blueprint Planning" width={250} height={250} layout="intrinsic" />
           </div>
         </div>
       ),
     },
     {
-      title: "Team Division",
+      title: "Execution & Implementation",
       content: (
         <div>
-          <p className="text-white dark:text-neutral-200 text-xs md:text-sm font-normal mb-4">
-            Deployed 5 new components on today
+          <p className="text-white dark:text-white text-lg md:text-xl font-normal mb-4">
+            Our team launches campaigns, develops websites, and executes branding strategies with precision, ensuring a seamless experience.
           </p>
           <div className="mb-8">
-            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-              ✅ Card grid component
+            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-lg md:text-xl">
+              ✅ Content Strategy & Branding
             </div>
-            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-              ✅ Startup template
+            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-lg md:text-xl">
+              ✅ Website & Tech Development
             </div>
-            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-              ✅ Random file upload lol
+            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-lg md:text-xl">
+              ✅ Social Media & Community Management
             </div>
-            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-              ✅ Himesh Reshammiya Music CD
+            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-lg md:text-xl">
+              ✅ Paid Marketing & Ad Campaigns
             </div>
-            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-xs md:text-sm">
-              ✅ Salman Bhai Fan Club registrations open
+            <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-lg md:text-xl">
+              ✅ Performance Analytics & Optimization
             </div>
           </div>
-          <div className="flex justify-end">
-            <Image
-              src="/latest1.png"
-              alt="startup template"
-              width={200}  // Change this to your desired size
-              height={200} // Change this to your desired size
-              layout="intrinsic"
-            />
-
-
-            <Image
-              src="/nuke.png"
-              alt="startup template"
-              width={200}  // Change this to your desired size
-              height={200} // Change this to your desired size
-              layout="intrinsic"
-            />
-
+          <div className="flex justify-end gap-4">
+            <Image src="/latest1.png" alt="Execution Process" width={250} height={250} layout="intrinsic" />
+            <Image src="/nuke.png" alt="Tech Implementation" width={250} height={250} layout="intrinsic" />
           </div>
         </div>
       ),
     },
   ];
   return (
-    <div className="w-full">
+    <div className="w-full bg-gray-900 p-8 rounded-xl">
       <Timeline data={data} />
     </div>
   );

@@ -1,7 +1,8 @@
 "use client";
 import Image from "next/image";
 import { useState } from "react";
-import { Button } from "@/components";
+
+import { TimelineDemo } from "@/data/data";
 
 const serviceItems = [
   {
@@ -111,6 +112,8 @@ export default function CreativeServicesGrid() {
           </div>
         </div>
       )}
+      
+      <TimelineDemo />
     </div>
   );
 }

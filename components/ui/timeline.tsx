@@ -39,10 +39,10 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
     >
       <div className="max-w-7xl mx-auto py-20 px-4 md:px-8 lg:px-10">
         <h2 className="text-5xl md:text-4xl mb-4 text-white dark:text-white max-w-4xl">
-          Timeline of Nuke Crafts :
+          Timeline of Revlient :
         </h2>
         <p className="text-white pt-4 dark:text-neutral-300 text-lg md:text-base max-w-sm">
-        At Nuke, we believe in a client-first strategy that blends innovation, data-driven insights, and human-centric design to create impactful digital experiences.
+        At Revlient, we believe in a client-first strategy that blends innovation, data-driven insights, and human-centric design to create impactful digital experiences.
         </p>
       </div>
 

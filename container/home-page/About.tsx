@@ -95,16 +95,16 @@ export default function About() {
           className="mt-10 flex flex-wrap justify-center gap-4"
         >
           <a 
-            href="#contact" 
+            href="/contact" 
             className="px-6 py-3 bg-[#FF4D4D] text-white font-medium rounded-full hover:bg-[#FF4D4D]/90 transition-all duration-300 flex items-center gap-2"
           >
-            Start a Project <ChevronRight size={16} />
+            Start a Project <ChevronRight size={16} href="/contact" />
           </a>
           <a 
-            href="#services" 
+            href="/services" 
             className="px-6 py-3 bg-white/10 backdrop-blur-sm text-white font-medium rounded-full hover:bg-white/20 transition-all duration-300 border border-white/10"
           >
-            Explore Services
+            Explore Services 
           </a>
         </motion.div>
       </div>
@@ -139,13 +139,7 @@ export default function About() {
               <p className="text-gray-300 leading-relaxed mb-4">
                 {service.description}
               </p>
-              <a 
-                href={`#${service.title.toLowerCase().replace(/\s+/g, '-')}`}
-                className="inline-flex items-center text-sm font-medium gap-2 transition-all duration-300 group-hover:gap-3"
-                style={{ color: service.color }}
-              >
-                Learn more <ChevronRight size={16} />
-              </a>
+             
             </motion.div>
           ))}
         </div>
@@ -172,14 +166,14 @@ export default function About() {
                 <span className="px-4 py-1 bg-white/10 rounded-full text-sm">Innovation</span>
               </div>
             </div>
-            <div className="bg-[#111] relative min-h-[300px] md:min-h-auto">
+           
               {/* This would be your showcase image */}
               <div className="absolute inset-0 flex items-center justify-center">
-                <span className="text-white/30 text-sm">Showcase Image Here</span>
+                
               </div>
             </div>
           </div>
-        </div>
+        
       </motion.div>
 
       {/* Social Links Section */}

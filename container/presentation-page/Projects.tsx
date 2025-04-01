@@ -24,7 +24,7 @@ export default function Projects() {
 			<section className="w-full relative z-30 padding-y rounded-t-[20px] bg-background">
 				<div>
 					<h2 className="sub-heading font-normal padding-x font-NeueMontreal text-secondry">
-						Purpose driven, strategy-led presentations
+						In Revlient, We CraftPurpose driven, strategy-led digitial solutions
 						<br className="sm:hidden xm:hidden" />
 						that people care about.
 					</h2>
