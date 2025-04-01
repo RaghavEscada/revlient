@@ -310,36 +310,28 @@ export const clientsItem = [
 export const projectItem = [
    {
       id: 1,
-      title: "Kalpana Creations",
-      href: "/case/",
+      title: "SOUMYA SHYAM",
+      href: "https://www.soumyashyammakeup.com/main/about.html",
       src: project1,
       links: [
-         {
-            id: 1,
-            title: "Social Media Marketing",
-            href: "/services",
-         },
+        
          {
             id: 2,
-            title: "Web Development",
+            title: "Website Development",
             href: "/services",
          },
-         {
-            id: 3,
-            title: "Brand Strategy",
-            href: "/services",
-         },
+        
          {
             id: 4,
-            title: "Creative Copywriting",
+            title: "Creative Content",
             href: "/services",
          },
       ]
    },
    {
       id: 2,
-      title: "Vedant Studios",
-      href: "/case/",
+      title: "NUTRI BOX",
+      href: "https://www.nutriboxx.co.in/",
       src: project2,
       links: [
          {
@@ -349,43 +341,48 @@ export const projectItem = [
          },
          {
             id: 2,
-            title: "Corporate Presentation",
+            title: "Website Development",
             href: "/services",
          },
       ]
    },
    {
       id: 3,
-      title: "Aryavarta Designs",
+      title: "BAMBRUSH",
       href: "/case/",
       src: project3,
       links: [
          {
             id: 1,
-            title: "Packaging Design",
+            title: "3D Design",
             href: "/services",
          },
          {
             id: 2,
-            title: "E-Commerce Branding",
+            title: "Website development",
             href: "/services",
          },
          {
             id: 3,
-            title: "Investor Deck",
+            title: "Creative content & seo",
             href: "/services",
          },
       ]
    },
    {
       id: 4,
-      title: "Samsara Media",
+      title: "KALEIDO SOLUTIONS",
       href: "/case/",
       src: project4,
       links: [
          {
             id: 1,
-            title: "Ad Campaigns",
+            title: "website development",
+            href: "/services",
+         },
+         {
+            id: 1,
+            title: "creative content & seo",
             href: "/services",
          },
       ]
@@ -437,340 +434,6 @@ export const serviceProcessItems = [
    },
 ];
 
-export const serviceClientsItem = [
-   {
-      id: 1,
-      website: "Karman Ventures",
-      href: "/",
-      title: "Services:",
-      name: "William Barnes",
-      src: client01,
-      review: "They were transparent about the time and the stages of the project. The end product is high quality, and I feel confident about how they were handholding the client through the process. I feel like I can introduce them to someone who needs to put a sales deck together from scratch, and they would be able to handhold the client experience from 0 to 100 very effectively from story to design. 5/5",
-      links: [
-         {
-            id: 1,
-            title: "investor deck",
-            href: "/services",
-         },
-         {
-            id: 2,
-            title: "sales deck",
-            href: "services",
-         },
-      ]
-   },
-   {
-      id: 2,
-      website: "Planetly",
-      href: "https://www.planetly.com",
-      title: "Services:",
-      name: "Nina Walloch",
-      src: client02,
-      review: "Ihor and his team tackled the projects with great professionalism and creativity. They understood our brand value and turned this into excellent slide designs. The process was seamless and very effective, so we decided to roll this out across all our presentation decks. Furthermore, their understanding, professionalism, and creativity have secured a continued partnership.",
-      links: [
-         {
-            id: 1,
-            title: "agency",
-            href: "/services",
-         },
-         {
-            id: 2,
-            title: "big news deck",
-            href: "services",
-         },
-         {
-            id: 3,
-            title: "branded template",
-            href: "services",
-         },
-         {
-            id: 4,
-            title: "investor deck",
-            href: "services",
-         },
-         {
-            id: 5,
-            title: "product presentation",
-            href: "services",
-         },
-         {
-            id: 6,
-            title: "sales deck",
-            href: "services",
-         },
-         {
-            id: 7,
-            title: "startup pitch",
-            href: "services",
-         },
-      ]
-   },
-   {
-      id: 3,
-      website: "Workiz Easy",
-      href: "https://www.workiz.com",
-      title: "Services:",
-      name: "Tormer levy",
-      src: client03,
-      review: "Nuke Marketing brought a certain level of professionalism into our presentations that we were lacking before. When I showed our management and HR teams the presentations OCHI developed, they were amazed — the final product was exactly what we needed to create a better experience for new employees and our clients.",
-      links: [
-         {
-            id: 1,
-            title: "compony presentation",
-            href: "/services",
-         },
-         {
-            id: 2,
-            title: "onboarding presentation",
-            href: "services",
-         },
-         {
-            id: 3,
-            title: "policy deck and playbook",
-            href: "services",
-         },
-         {
-            id: 4,
-            title: "redesign",
-            href: "services",
-         },
-         {
-            id: 5,
-            title: "sales deck",
-            href: "services",
-         },
-      ]
-   },
-   {
-      id: 4,
-      website: "Premium Blend",
-      href: "https://www.premium-blend.com",
-      title: "Services:",
-      name: "Elien Kim",
-      src: client04,
-      review: "They are truly changing the landscape of presentations!! Fast, effective, and nice humans that listened to every detail of our needs. Creating a deck with their template brings so much joy and ease. We proudly showcase their design in our calls and presentations.",
-      links: [
-         {
-            id: 1,
-            title: "branded template",
-            href: "/services",
-         },
-         {
-            id: 2,
-            title: "illustration",
-            href: "services",
-         },
-      ]
-   },
-   {
-      id: 5,
-      website: "Hypercare Systems",
-      href: "https://www.hypercare-systems.com",
-      title: "Services:",
-      name: "Brendon Goss",
-      src: client05,
-      review: "The service received from OCHI was absolutely first-class. Their close attention to detail, and deep thought in terms of narrative, flow, and aesthetics, completely exceeded my expectations, which were very high from the outset. Especially loved and appreciated the creation of visuals, animation, and advice around the look and feel that we are after. We will definitely continue working with Ihor and his team. I cannot recommend them highly enough.",
-      links: [
-         {
-            id: 1,
-            title: "investor deck",
-            href: "/services",
-         },
-         {
-            id: 2,
-            title: "startup pitch",
-            href: "services",
-         },
-      ]
-   },
-   {
-      id: 6,
-      website: "Officevibe",
-      href: "https://www.officevibe.com",
-      title: "Services:",
-      name: "Raff Labri",
-      src: client06,
-      review: "Ochi has an impressive understanding of what’s needed to do an effective presentation. The stakeholders at work said it’s the best most complete PP template they’ve ever seen. Ochi delivered more than I was expecting and we were really surprised with the quality of his work. Will work with Ochi design again for sure!",
-      links: [
-         {
-            id: 1,
-            title: "branded template deck",
-            href: "/services",
-         },
-      ]
-   },
-   {
-      id: 7,
-      website: "Orderlion",
-      href: "https://www.orderlion.com",
-      title: "Services:",
-      name: "Stefan Strohmer",
-      src: client07,
-      review: "The result was just amazing! For me, a designer is exceptional when you are so satisfied with the result that you want to look at it the whole day like a kid with a new toy. Ihor and his team delivered exactly that! They are very talented designers who understand the real business problem we are trying to solve and iterate over many drafts to achieve the best possible outcome. We are looking for a long-lasting working relationship!",
-      links: [
-         {
-            id: 1,
-            title: "agency",
-            href: "/services",
-         },
-         {
-            id: 2,
-            title: "investor deck",
-            href: "services",
-         },
-         {
-            id: 3,
-            title: "product presentation",
-            href: "services",
-         },
-         {
-            id: 4,
-            title: "review",
-            href: "services",
-         },
-         {
-            id: 2,
-            title: "sales deck",
-            href: "services",
-         },
-      ]
-   },
-   {
-      id: 8,
-      website: "Black Book",
-      href: "https://www.blackbookapp.co",
-      title: "Services:",
-      name: "Jacki Smith",
-      src: client08,
-      review: "They nailed what our product was all about. We found their ability to workshop all the angles and take on feedback was great and it shows in the final product. Everything moved with a milestone dynamic brief via Notion which was handy to track progress. We’re very happy with the process and the final product. All was handled well and professionally.",
-      links: [
-         {
-            id: 1,
-            title: "review",
-            href: "/services",
-         },
-         {
-            id: 2,
-            title: "startup pitch",
-            href: "services",
-         },
-      ]
-   },
-];
-
-export const serviceCapaybilitiesItem = [
-   {
-      id: 1,
-      src1: capaybilities1,
-      title1: "SOCIAL MEDIA STRATEGY:",
-      review: "We craft scroll-stopping content, viral campaigns, and data-driven strategies to elevate your brand across all platforms.",
-      subTitle: "Social Media Services",
-      links1: [
-         {
-            id: 1,
-            title: "Content Creation",
-            href: "/"
-         },
-         {
-            id: 2,
-            title: "Reels & Shorts",
-            href: "/"
-         },
-      ],
-      src2: capaybilities2,
-      title2: "BRAND STORYTELLING:",
-      links2: [
-         {
-            id: 1,
-            title: "Visual Identity",
-            href: "/"
-         },
-         {
-            id: 2,
-            title: "Creative Direction",
-            href: "/"
-         },
-         {
-            id: 3,
-            title: "Marketing Campaigns",
-            href: "/"
-         },
-         {
-            id: 4,
-            title: "Ad Creatives",
-            href: "/"
-         },
-         {
-            id: 5,
-            title: "Influencer Collabs",
-            href: "/"
-         },
-      ]
-   },
-   {
-      id: 2,
-      src1: capaybilities3,
-      title1: "HIRE & MANAGE PEOPLE:",
-      review: "We help manage investor expectations and secure financing for your business with an excellent investor deck.Having a good product or illuminating ideas is not enough anymore.Poor investor presentation may close the door to potential financing right away.In contrast, a properly made investor deck provides investors with clarity, evokes confidence, and leaves them craving for more.",
-      subTitle: "Projects",
-      links1: [
-         {
-            id: 1,
-            title: "big news deck",
-            href: "/"
-         },
-         {
-            id: 2,
-            title: "branded template",
-            href: "/"
-         },
-         {
-            id: 3,
-            title: "onboarding presentation",
-            href: "/"
-         },
-         {
-            id: 4,
-            title: "policy deck & playbook",
-            href: "/"
-         },
-         {
-            id: 5,
-            title: "progress report",
-            href: "/"
-         },
-      ],
-      src2: capaybilities4,
-      title2: "ADDITIONAL:",
-      links2: [
-         {
-            id: 1,
-            title: "agency",
-            href: "/"
-         },
-         {
-            id: 2,
-            title: "branding",
-            href: "/"
-         },
-         {
-            id: 3,
-            title: "corporate training",
-            href: "/"
-         },
-         {
-            id: 4,
-            title: "redesign",
-            href: "/"
-         },
-         {
-            id: 5,
-            title: "review",
-            href: "/"
-         },
-      ]
-   },
-];
 
 export const expectationsItems = [
    {
@@ -840,197 +503,79 @@ export const achiveItems = [
 export const presentationProjectItem = [
    {
       id: 1,
-      title: "Amuthasurabhi",
+      title: "SOUMYA SHYAM",
+      href: "https://www.soumyashyammakeup.com/main/about.html",
       src: project1,
-      href: "/case/",
       links: [
-         {
-            id: 1,
-            title: "audit",
-            href: "/services",
-         },
+        
          {
             id: 2,
-            title: "copywriting",
-            href: "services",
+            title: "Website Development",
+            href: "/services",
          },
-         {
-            id: 3,
-            title: "sales deck",
-            href: "services",
-         },
+        
          {
             id: 4,
-            title: "slides design",
-            href: "services",
+            title: "Creative Content",
+            href: "/services",
          },
       ]
    },
    {
       id: 2,
-      title: "Amuthasurabhi",
-      src: project3,
-      href: "/case/",
+      title: "NUTRI BOX",
+      href: "https://www.nutriboxx.co.in/",
+      src: project2,
       links: [
          {
             id: 1,
-            title: "brand identity",
+            title: "Brand Identity",
             href: "/services",
          },
          {
             id: 2,
-            title: "design research",
-            href: "services",
-         },
-         {
-            id: 3,
-            title: "investor deck",
-            href: "services",
+            title: "Website Development",
+            href: "/services",
          },
       ]
    },
    {
       id: 3,
-      title: "premium blend",
-      src: project4,
+      title: "BAMBRUSH",
       href: "/case/",
+      src: project3,
       links: [
          {
             id: 1,
-            title: "brand template",
+            title: "3D Design",
+            href: "/services",
+         },
+         {
+            id: 2,
+            title: "Website development",
+            href: "/services",
+         },
+         {
+            id: 3,
+            title: "Creative content & seo",
             href: "/services",
          },
       ]
    },
    {
       id: 4,
-      title: "planetly",
-      src: project5,
+      title: "KALEIDO SOLUTIONS",
       href: "/case/",
-      links: [
-         {
-            id: 1,
-            title: "brand template",
-            href: "/services",
-         },
-         {
-            id: 2,
-            title: "big news deck",
-            href: "/services",
-         },
-         {
-            id: 3,
-            title: "branded template",
-            href: "/services",
-         },
-         {
-            id: 4,
-            title: "investor deck",
-            href: "/services",
-         },
-         {
-            id: 5,
-            title: "policy deck & playbook",
-            href: "/services",
-         },
-         {
-            id: 6,
-            title: "sales deck",
-            href: "/services",
-         },
-      ]
-   },
-   {
-      id: 5,
-      title: "black box",
-      src: project2,
-      href: "/case/",
-      links: [
-         {
-            id: 1,
-            title: "investor deck",
-            href: "/services",
-         },
-         {
-            id: 2,
-            title: "redesign",
-            href: "/services",
-         },
-         {
-            id: 3,
-            title: "review",
-            href: "/services",
-         },
-      ]
-   },
-   {
-      id: 6,
-      title: "vise",
-      src: project2,
-      href: "/case/",
-      links: [
-         {
-            id: 1,
-            title: "agency",
-            href: "/services",
-         },
-         {
-            id: 2,
-            title: "compony presentation",
-            href: "services",
-         },
-      ]
-   },
-   {
-      id: 7,
-      title: "soft start",
-      src: project5,
-      href: "/case/",
-      links: [
-         {
-            id: 1,
-            title: "brand template",
-            href: "/services",
-         },
-         {
-            id: 2,
-            title: "sales desc",
-            href: "/services",
-         },
-      ]
-   },
-   {
-      id: 8,
-      title: "officevibe",
-      src: project3,
-      href: "/case/",
-      links: [
-         {
-            id: 1,
-            title: "brand template",
-            href: "/services",
-         },
-      ]
-   },
-   {
-      id: 9,
-      title: "workiz easy",
       src: project4,
-      href: "/case/",
       links: [
          {
             id: 1,
-            title: "onboarding presentation",
+            title: "website development",
             href: "/services",
          },
          {
-            id: 2,
-            title: "policy deck & playbook",
-            href: "/services",
-         },
-         {
-            id: 3,
-            title: "sales deck",
+            id: 1,
+            title: "creative content & seo",
             href: "/services",
          },
       ]
