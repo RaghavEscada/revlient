@@ -13,18 +13,14 @@ export const navbarItems = [
    {
       id: 2,
       title: "Crafts",
-      href: "/nuke-works",
+      href: "/rev-works",
    },
    {
       id: 3,
       title: "Team",
-      href: "/nuke-team",
+      href: "/rev-team",
    },
-   {
-      id: 4,
-      title: "About Us",
-      href: "/insights",
-   },
+   
    {
       id: 5,
       title: "Contact us",

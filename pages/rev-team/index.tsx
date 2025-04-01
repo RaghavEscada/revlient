@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { Curve } from "@/components";
 
 const teamMembers = [
   {
@@ -31,19 +32,19 @@ const teamMembers = [
 
 export default function MeetOurTeam() {
   const [index, setIndex] = useState(0);
-
+  
   const nextSlide = () => {
     setIndex((prev) => (prev + 1) % teamMembers.length);
   };
-
+  
   const prevSlide = () => {
     setIndex((prev) => (prev - 1 + teamMembers.length) % teamMembers.length);
   };
-
+  
   return (
     <section className="relative h-screen w-full flex flex-col justify-center items-center bg-white text-black pt-24">
+      <Curve backgroundColor={"#f1f1f1"} children={undefined} />
       <h1 className="absolute top-20 text-5xl font-bold tracking-wide text-gray-800">Meet Our Team</h1>
-
       <AnimatePresence mode="wait">
         <motion.div
           key={index}
@@ -66,7 +67,6 @@ export default function MeetOurTeam() {
           </div>
         </motion.div>
       </AnimatePresence>
-
       {/* Name Track */}
       <div className="absolute bottom-10 flex gap-4">
         {teamMembers.map((member, i) => (
@@ -81,7 +81,6 @@ export default function MeetOurTeam() {
           </button>
         ))}
       </div>
-
       {/* Left Arrow */}
       <button
         onClick={prevSlide}
@@ -89,7 +88,6 @@ export default function MeetOurTeam() {
       >
         <ChevronLeft className="w-10 h-10 text-gray-700" />
       </button>
-
       {/* Right Arrow */}
       <button
         onClick={nextSlide}

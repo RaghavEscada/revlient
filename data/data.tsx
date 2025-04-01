@@ -272,11 +272,11 @@ export function LampDemo() {
           duration: 0.8,
           ease: "easeInOut",
         }}
-        className="mt-8 bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center text-[150px] font-medium tracking-tight text-transparent md:text-7xl"
+        className="mt-8 bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center text-[150px] font-medium tracking-tight text-black md:text-7xl"
       >
         SERVICES <br />
       </motion.h1>
-      <p className="pt-4 font-NeueMontreal text-white">Crafts by Revlient</p>
+     <p>scroll to explore</p>
     </LampContainer>
   );
 }
