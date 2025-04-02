@@ -2,6 +2,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Curve } from "@/components";
+import { LampDemoTeam } from "@/data/data";
 
 const teamMembers = [
   {
@@ -42,9 +43,11 @@ export default function MeetOurTeam() {
   };
 
   return (
+    <Curve backgroundColor={"#f1f1f1"}>
+      <LampDemoTeam/>
     <section className="relative h-screen w-full flex flex-col justify-center items-center bg-white text-black pt-24">
      
-      <h1 className="absolute top-20 text-5xl font-bold tracking-wide text-gray-800">Meet Our Team</h1>
+      <h1 className="absolute top-20 italic text-5xl tracking-tighter font-light  text-gray-700">""Alone, we shine. Together, we set the world ablaze with greatness"</h1>
       <AnimatePresence mode="wait">
         <motion.div
           key={index}
@@ -96,6 +99,7 @@ export default function MeetOurTeam() {
         <ChevronRight className="w-10 h-10 text-gray-700" />
       </button>
     </section>
+    </Curve>
     
   );
 }

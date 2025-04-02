@@ -8,6 +8,8 @@ import {
 	Publication,
 } from "@/container";
 
+import { LampDemoCraft } from "@/data/data";
+
 export default function Presentation() {
 	useEffect(() => {
 		(async () => {
@@ -17,8 +19,10 @@ export default function Presentation() {
 	}, []);
 	return (
 		<>
+
 			<Curve backgroundColor={"#f1f1f1"}>
-				<Heropresentation />
+				<LampDemoCraft/>
+
 				<Projectspresentation />
 				
 				<Ready />

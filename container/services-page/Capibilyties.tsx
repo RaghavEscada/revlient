@@ -7,7 +7,7 @@ import { TimelineDemo } from "@/data/data";
 const serviceItems = [
   {
     id: 1,
-    title: "SMMA",
+    title: "Digital Marketing",
     description: "Strategic social media marketing to elevate your brand's digital presence",
     imageSrc: "/rev.jpg",
     services: [
