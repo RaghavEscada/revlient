@@ -3,7 +3,6 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
 import { IoMdClose } from "react-icons/io";
-import { logo, mobileLogo } from "@/public";
 import { footernavbarItems } from "@/constants";
 import { HiOutlineMenuAlt4 } from "react-icons/hi";
 import { AnimatePresence, motion } from "framer-motion";
@@ -16,7 +15,7 @@ export default function MobileNav() {
 				<Link href={"/"}>
 					<Image
 						src="/revnav.png"
-						alt="nukemarketing"
+						alt="rev"
 						width={70}
 						height={70}
 					/>

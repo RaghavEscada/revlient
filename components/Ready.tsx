@@ -3,7 +3,7 @@ import Link from "next/link";
 import { useRef } from "react";
 import { TextMask } from "@/animation";
 import { ArrowUpRight } from "lucide-react";
-import { Eyes, RoundButton, Rounded } from "@/components";
+import { RoundButton, Rounded } from "@/components";
 import { useScroll, useTransform, motion } from "framer-motion";
 
 export default function Ready() {

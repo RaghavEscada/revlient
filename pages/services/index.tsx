@@ -1,24 +1,34 @@
 "use client";
 import {
   Capibilyties,
-  Expectations,
-  Process,
-  Archive,
-  Heroservices,
+  
 } from "@/container";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import { Curve, Ready } from "@/components";
 import { AnimatedTestimonialsDemo } from "@/data/data";
 import { LampDemoServ } from "@/data/data";
-import { TimelineDemo } from "@/data/data";
+
 
 export default function Services() {
+  const containerRef = useRef(null);
   useEffect(() => {
     (async () => {
       const LocomotiveScroll = (await import("locomotive-scroll")).default;
-      const locomotiveScroll = new LocomotiveScroll();
+      if (containerRef.current) {
+        const locomotiveScroll = new LocomotiveScroll({
+        
+          // Add other options as needed
+        });
+        // Optionally, you can destroy the instance when the component unmounts
+        return () => {
+          locomotiveScroll.destroy();
+        };
+      } else {
+        console.error("Container element not found.");
+      }
     })();
   }, []);
+
 
   return (
     <>

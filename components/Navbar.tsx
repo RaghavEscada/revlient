@@ -1,7 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { useState, useEffect } from "react";
-import { navVariants } from "@/motion";
+import { useState } from "react";
 import { TextHover } from "@/animation";
 import { navbarItems } from "@/constants";
 import { useMotionValueEvent, useScroll, motion } from "framer-motion";
