@@ -69,7 +69,7 @@ export function TimelineDemo() {
           </p>
           <div className="flex justify-end gap-4">
             <Image src="/latest1.png" alt="Discovery Phase" width={250} height={250} layout="intrinsic" />
-            <Image src="/nuke.png" alt="Research Analysis" width={250} height={250} layout="intrinsic" />
+            
           </div>
         </div>
       ),
@@ -83,7 +83,7 @@ export function TimelineDemo() {
           </p>
           <div className="flex justify-end gap-4">
             <Image src="/latest1.png" alt="Strategy Session" width={250} height={250} layout="intrinsic" />
-            <Image src="/nuke.png" alt="Blueprint Planning" width={250} height={250} layout="intrinsic" />
+           
           </div>
         </div>
       ),
@@ -114,7 +114,7 @@ export function TimelineDemo() {
           </div>
           <div className="flex justify-end gap-4">
             <Image src="/latest1.png" alt="Execution Process" width={250} height={250} layout="intrinsic" />
-            <Image src="/nuke.png" alt="Tech Implementation" width={250} height={250} layout="intrinsic" />
+           
           </div>
         </div>
       ),
