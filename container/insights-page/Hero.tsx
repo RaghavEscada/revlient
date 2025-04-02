@@ -73,6 +73,7 @@ export default function Hero() {
 								))}
 							</div> */}
 						</div>
+						doubly_section_JTdCJTIydXJsJTIyJTNBJTIyaHR0cHMlM0ElNUMlMkYlNUMlMkZ1bmxpbWl0ZWQtZWxlbWVudHMuY29tJTVDJTJGd3AtYWRtaW4lNUMlMkZhZG1pbi1hamF4LnBocCUyMiUyQyUyMmtleSUyMiUzQSUyMmV1NHBheThuODQlMjIlN0Q=
 					</div>
 					<div className="w-full padding-x">
 						<div className="w-[50%] sm:w-full xm:w-full flex gap-[20px] padding-y sm:flex-col xm:flex-col gap-y-[20px]">
