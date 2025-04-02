@@ -817,7 +817,7 @@ export const FaqItems = [
    },
    {
       id: 2,
-      question: "Do you offer website developmen and revamping?",
+      question: "Do you offer website development and revamping?",
       title: "Description",
       description: "Yes! We build high-performing, visually stunning websites that are SEO-optimized and designed to convert visitors into customers. Our websites are mobile-friendly, fast, and tailored to your business needs.",
       links: [

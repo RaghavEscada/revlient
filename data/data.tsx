@@ -68,7 +68,7 @@ export function TimelineDemo() {
             Before crafting any strategy, we take the time to deeply understand your business, goals, and audience. Our team conducts thorough market research to align our approach with your brand identity.
           </p>
           <div className="flex justify-end gap-4">
-            <Image src="/latest1.png" alt="Discovery Phase" width={250} height={250} layout="intrinsic" />
+            <Image src="/1.jpeg" alt="Discovery Phase" width={250} height={250} layout="intrinsic" />
             
           </div>
         </div>
@@ -82,7 +82,7 @@ export function TimelineDemo() {
             Our experts map out a strategic plan that includes content, branding, and tech solutions. Every decision is backed by data to ensure maximum impact.
           </p>
           <div className="flex justify-end gap-4">
-            <Image src="/latest1.png" alt="Strategy Session" width={250} height={250} layout="intrinsic" />
+            <Image src="/2.jpeg" alt="Strategy Session" width={250} height={250} layout="intrinsic" />
            
           </div>
         </div>
@@ -113,7 +113,7 @@ export function TimelineDemo() {
             </div>
           </div>
           <div className="flex justify-end gap-4">
-            <Image src="/latest1.png" alt="Execution Process" width={250} height={250} layout="intrinsic" />
+            <Image src="/3.jpeg" alt="Execution Process" width={250} height={250} layout="intrinsic" />
            
           </div>
         </div>

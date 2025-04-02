@@ -29,6 +29,13 @@ const teamMembers = [
     image: "/jithu.png",
     description: "Building seamless digital experiences & products.",
   },
+  {
+    name: "DEEPSHIKHA", 
+    role: "Webv Experience Designer",
+    image: "/nsg.jpeg",
+    description: "Crafting smooth and intuitive user interfaces for seamless digital experiences.",
+  },
+  
 ];
 
 export default function MeetOurTeam() {
