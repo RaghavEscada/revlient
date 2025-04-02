@@ -1,5 +1,4 @@
-"use client"
-
+"use client";
 
 import { useState } from "react";
 import { TimelineDemo } from "@/data/data";
@@ -11,49 +10,51 @@ const serviceItems = [
     description: "Strategic social media marketing to elevate your brand's digital presence",
     imageSrc: "/rev.jpg",
     services: [
-      { id: 101, title: "Content Strategy" },
-      { id: 102, title: "Community Management" },
-      { id: 103, title: "Paid Social Campaigns"},
-      { id: 104, title: "Social Analytics" }
-    ]
+      { id: 101, title: "Content Strategy", href: "#" },
+      { id: 102, title: "Community Management", href: "#" },
+      { id: 103, title: "Paid Social Campaigns", href: "#" },
+      { id: 104, title: "Social Analytics", href: "#" },
+    ],
   },
   {
     id: 2,
     title: "Branding",
     description: "Crafting distinctive brand identities that capture attention and create connections",
     services: [
-      { id: 201, title: "Brand Identity"},
-      { id: 202, title: "Logo Design" },
-      { id: 203, title: "Brand Guidelines"},
-      { id: 204, title: "Brand Strategy" }
-    ]
+      { id: 201, title: "Brand Identity", href: "#" },
+      { id: 202, title: "Logo Design", href: "#" },
+      { id: 203, title: "Brand Guidelines", href: "#" },
+      { id: 204, title: "Brand Strategy", href: "#" },
+    ],
   },
   {
     id: 3,
     title: "Web Development",
     description: "Beautiful, functional websites that deliver exceptional user experiences",
     services: [
-      { id: 301, title: "Website Design" },
-      { id: 302, title: "Website Revamp" },
-      { id: 303, title: "E-commerce" },
-      { id: 304, title: "CMS Development"}
-    ]
+      { id: 301, title: "Website Design", href: "#" },
+      { id: 302, title: "Website Revamp", href: "#" },
+      { id: 303, title: "E-commerce", href: "#" },
+      { id: 304, title: "CMS Development", href: "#" },
+    ],
   },
   {
     id: 4,
     title: "Tech Solutions",
     description: "Innovative technical solutions tailored to your unique business challenges",
     services: [
-      { id: 401, title: "System Integration"},
-      { id: 402, title: "Workflow Automation"},
-      { id: 403, title: "Custom Development" },
-      { id: 404, title: "Technical Consultation" }
-    ]
-  }
+      { id: 401, title: "System Integration", href: "#" },
+      { id: 402, title: "Workflow Automation", href: "#" },
+      { id: 403, title: "Custom Development", href: "#" },
+      { id: 404, title: "Technical Consultation", href: "#" },
+    ],
+  },
 ];
 
 export default function CreativeServicesGrid() {
   const [activeService, setActiveService] = useState<number | null>(null);
+
+  const selectedService = serviceItems.find((item) => item.id === activeService);
 
   return (
     <div className="w-full bg-black text-white py-20 px-8">
@@ -79,31 +80,34 @@ export default function CreativeServicesGrid() {
         ))}
       </div>
 
-      {activeService !== null && (
+      {selectedService && (
         <div className="fixed inset-0 bg-black/90 flex items-center justify-center p-6 z-50">
           <div className="bg-white text-black border border-black p-12 rounded-lg max-w-lg w-full space-y-8">
             <div className="flex justify-between items-center">
-              <h2 className="text-3xl font-semibold text-black">
-                {serviceItems.find(item => item.id === activeService)?.title}
-              </h2>
-              <button onClick={() => setActiveService(null)} className="text-gray-700 hover:text-black text-2xl">
+              <h2 className="text-3xl font-semibold text-black">{selectedService.title}</h2>
+              <button
+                onClick={() => setActiveService(null)}
+                className="text-gray-700 hover:text-black text-2xl"
+              >
                 ✖
               </button>
             </div>
-            <p className="text-gray-700 text-lg">
-              {serviceItems.find(item => item.id === activeService)?.description}
-            </p>
+            <p className="text-gray-700 text-lg">{selectedService.description}</p>
             <div className="grid grid-cols-1 gap-6">
-              {serviceItems.find(item => item.id === activeService)?.services.map(service => (
-                <a key={service.id} href={service.href} className="block bg-white border border-black p-6 rounded-lg hover:bg-gray-200 transition text-center">
+              {selectedService.services.map((service) => (
+                <a
+                  key={service.id}
+                  href={service.href}
+                  className="block bg-white border border-black p-6 rounded-lg hover:bg-gray-200 transition text-center"
+                >
                   <h3 className="text-lg font-semibold text-black">{service.title}</h3>
                 </a>
-               ))}
+              ))}
             </div>
           </div>
         </div>
       )}
-      
+
       <div className="mt-16">
         <TimelineDemo />
       </div>

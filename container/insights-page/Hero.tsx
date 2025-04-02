@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { latestItemss } from "@/constants";
-import { LampDemo } from "@/data/data";
+
 
 
 

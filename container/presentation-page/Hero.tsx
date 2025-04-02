@@ -1,5 +1,4 @@
 import { Eyes } from "@/components";
-import { LampDemo } from "@/data/data";
 
 export default function Hero() {
 	return (
