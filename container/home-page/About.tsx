@@ -1,5 +1,6 @@
 "use client";
 import { Instagram, Linkedin, MessageCircle, ChevronRight } from "lucide-react";
+import { FeaturesSectionDemo } from "@/components/ui/bentogrid";
 
 const socialLinks = [
   { id: 1, title: "Instagram", href: "https://instagram.com", icon: <Instagram size={20} /> },
@@ -122,6 +123,7 @@ export default function About() {
         <div className="mt-16 text-center text-gray-500 text-sm">
           <p className="tracking-wide uppercase text-xs">Explore More</p>
         </div>
+        
       </div>
     </section>
   );

@@ -94,7 +94,7 @@ export default function Footer() {
 				<div className="w-1/2 sm:w-full xm:w-full">
 					<Link href={"/"}>
 						<Image
-							src="/revnav.png"
+							src="/revlogo.png"
 							alt="rev logo"
 							width={250}
 							height={250}

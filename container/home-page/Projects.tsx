@@ -1,5 +1,6 @@
 import { projectItem } from "@/constants";
 import { Heading, ProjectCard, RoundButton, Tags } from "@/components";
+import { FeaturesSectionDemo } from "@/components/ui/bentogrid";
 
 export default function Projects() {
 	return (
@@ -47,6 +48,8 @@ export default function Projects() {
 					/>
 				</div>
 			</div>
+			<div className="pt-20"><FeaturesSectionDemo/></div>
+			
 		</section>
 	);
 }
