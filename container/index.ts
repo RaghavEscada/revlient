@@ -26,9 +26,7 @@ export { default as Principles } from './about-page/Principles';
 export { default as Partners } from './about-page/Partners';
 export { default as Insights } from './about-page/Insights';
 
-// insights page
-export { default as Heroinsights } from './insights-page/Hero';
-export { default as Publicationinsights } from './insights-page/Publication';
+
 
 // contact page
 export { default as Herocontact } from './contact-page/Hero';

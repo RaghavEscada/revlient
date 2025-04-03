@@ -2,6 +2,7 @@ import { AnimatedTestimonials } from "@/components/ui/animated-testimonials";
 import { Timeline } from "@/components/ui/timeline";
 import { TextHoverEffect } from "@/components/ui/text-hover-effect";
 import { LampContainer } from "@/components/ui/lamp";
+import { HeroParallax } from "@/components/ui/hero-parallax";
 
 
 
@@ -137,7 +138,91 @@ export function TextHoverEffectDemo() {
 
 
   );
+};
+
+export function HeroParallaxDemo() {
+  return <HeroParallax products={products} />;
 }
+export const products = [
+  {
+    "title": "Revlient",
+    "link": "https://revlient.com",
+    "thumbnail": "/b5.png"
+  },
+  {
+    "title": "Revlient",
+    "link": "https://revlient.com",
+    "thumbnail": "/revlogo.png"
+  },
+  {
+    "title": "Revlient",
+    "link": "https://revlient.com",
+    "thumbnail": "/b1.png"
+  },
+  {
+    "title": "Revlient",
+    "link": "https://revlient.com",
+    "thumbnail": "/b4.png"
+  },
+  {
+    "title": "Revlient",
+    "link": "https://revlient.com",
+    "thumbnail": "/b5.png"
+  },
+  {
+    "title": "Revlient",
+    "link": "https://revlient.com",
+    "thumbnail": "/b4.png"
+  },
+  {
+    "title": "Revlient",
+    "link": "https://revlient.com",
+    "thumbnail": "/b3.png"
+  },
+  {
+    "title": "Revlient",
+    "link": "https://revlient.com",
+    "thumbnail": "/b1.png"
+  },
+  {
+    "title": "Revlient",
+    "link": "https://revlient.com",
+    "thumbnail": "/b3.png"
+  },
+  {
+    "title": "Revlient",
+    "link": "https://revlient.com",
+    "thumbnail": "/b1.png"
+  },
+  {
+    "title": "Revlient",
+    "link": "https://revlient.com",
+    "thumbnail": "/b5.png"
+  },
+  {
+    "title": "Revlient",
+    "link": "https://revlient.com",
+    "thumbnail": "/b4.png"
+  },
+  {
+    "title": "Revlient",
+    "link": "https://revlient.com",
+    "thumbnail": "/b3.png"
+  },
+  {
+    "title": "Revlient",
+    "link": "https://revlient.com",
+    "thumbnail": "/b5.png"
+  },
+  {
+    "title": "Revlient",
+    "link": "https://revlient.com",
+    "thumbnail": "/b1.png"
+  }
+];
+
+
+
 
 
 
