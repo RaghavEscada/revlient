@@ -54,23 +54,23 @@ export const footernavbarItems = [
    {
       id: 2,
       title: "Services",
-      href: "services",
+      href: "/services",
    },
    {
       id: 3,
       title: "Our work",
-      href: "rev-works",
+      href: "/rev-works",
    },
    {
       id: 4,
       title: "Team",
-      href: "rev-team",
+      href: "/rev-team",
    },
   
    {
       id: 6,
       title: "Contact us",
-      href: "contact",
+      href: "/contact",
    },
    
 ];

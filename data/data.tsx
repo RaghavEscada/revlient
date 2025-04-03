@@ -261,7 +261,7 @@ export function LampDemoServ() {
         }}
         className="mt-8 bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center text-[150px] font-medium tracking-tight text-black md:text-7xl"
       >
-        SERVICES <br />
+        TASKS <br />
       </motion.h1>
      <p>scroll to explore</p>
     </LampContainer>
