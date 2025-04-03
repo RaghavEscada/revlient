@@ -152,7 +152,7 @@ export const products = [
   {
     "title": "Revlient",
     "link": "https://revlient.com",
-    "thumbnail": "/revlogo.png"
+    "thumbnail": "/b3.png"
   },
   {
     "title": "Revlient",
@@ -177,7 +177,7 @@ export const products = [
   {
     "title": "Revlient",
     "link": "https://revlient.com",
-    "thumbnail": "/b3.png"
+    "thumbnail": "/revlogo.png"
   },
   {
     "title": "Revlient",
