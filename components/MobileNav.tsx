@@ -34,26 +34,12 @@ export default function MobileNav() {
   
   return (
     <>
-      {/* Logo bar - visible on all screens */}
-      <div className="w-full flex justify-between items-center h-[8vh] px-6">
-        <Link href="/" className="z-10">
-          <Image
-            src="/revnav.png"
-            alt="Revlient"
-            width={70}
-            height={70}
-            priority
-          />
-        </Link>
-      </div>
-
       {/* Mobile icon navigation - only visible on small screens (mobile) */}
       <div className="fixed bottom-0 left-0 right-0 bg-black bg-opacity-90 backdrop-blur-sm z-50 md:hidden">
         <div className="flex justify-around items-center h-16 px-4">
           {navItems.map((item) => {
             const isActive = pathname === item.href;
             const IconComponent = item.icon;
-            
             return (
               <Link
                 key={item.id}
@@ -68,7 +54,6 @@ export default function MobileNav() {
                 >
                   <IconComponent size={24} />
                   <span className="text-xs mt-1">{item.title}</span>
-                  
                   {isActive && (
                     <motion.div
                       layoutId="activeTab"
