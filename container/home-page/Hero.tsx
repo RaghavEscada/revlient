@@ -11,7 +11,7 @@ export default function Hero() {
     // Initial loading animation
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 2000);
+    }, 1000);
     
     // Slight delay for content reveal
     const contentTimer = setTimeout(() => {

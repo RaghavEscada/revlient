@@ -1,65 +1,87 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
-import { useState } from "react";
-import { IoMdClose } from "react-icons/io";
-import { footernavbarItems } from "@/constants";
-import { HiOutlineMenuAlt4 } from "react-icons/hi";
-import { AnimatePresence, motion } from "framer-motion";
+import { usePathname } from "next/navigation";
+import { HiOutlineUserGroup } from "react-icons/hi";
+import { MdOutlineDesignServices } from "react-icons/md";
+import { AiOutlineFundProjectionScreen } from "react-icons/ai";
+import { motion } from "framer-motion";
+
+// Define navigation items with icons
+const navItems = [
+  {
+    id: 1,
+    title: "Team",
+    href: "/rev-team",
+    icon: HiOutlineUserGroup
+  },
+  {
+    id: 2,
+    title: "Services",
+    href: "/services",
+    icon: MdOutlineDesignServices
+  },
+  {
+    id: 3,
+    title: "Works",
+    href: "/rev-works",
+    icon: AiOutlineFundProjectionScreen
+  },
+];
 
 export default function MobileNav() {
-	const [toggle, setToggle] = useState(false);
-	return (
-		<>
-			<div className="w-full hidden justify-between items-center h-[8vh] padding-x sm:flex xm:flex md:flex">
-				<Link href={"/"}>
-					<Image
-						src="/revnav.png"
-						alt="rev"
-						width={70}
-						height={70}
-					/>
-				</Link>
-				<HiOutlineMenuAlt4
-					onClick={() => setToggle(true)}
-					className="text-3xl cursor-pointer text-black"
-				/>
-			</div>
-			<AnimatePresence mode="wait">
-				{toggle && (
-					<motion.div
-						initial={{ y: "-100%" }}
-						animate={{ y: 0 }}
-						exit={{ y: "-100%" }}
-						transition={{ duration: 1, ease: [0.3, 0.86, 0.36, 0.95] }}
-						className="fixed top-0 bottom-0 right-0 z-50 w-full min-h-screen flex justify-end items-end flex-col bg-secondry">
-						<div className="w-full flex justify-between items-center h-[8vh] border-b border-[#f1f1f155] padding-x">
-							<Link href={"/"}>
-								<Image
-									src="/revnav.png"									alt="revlient"
-									width={70}
-									height={70}
-								/>
-							</Link>
-							<IoMdClose
-								onClick={() => setToggle(false)}
-								className="text-3xl cursor-pointer text-background"
-							/>
-						</div>
-						<ul className="h-full w-full flex justify-center text-left flex-col gap-[10px] padding-x">
-							{footernavbarItems.map((item) => (
-								<Link
-									href={item.href}
-									key={item.id}
-									onClick={(toggle) => setToggle(!toggle)}
-									className="text-[80px] leading-[67px] font-FoundersGrotesk uppercase font-bold tracking-[-.9] text-background">
-									{item.title}
-								</Link>
-							))}
-						</ul>
-					</motion.div>
-				)}
-			</AnimatePresence>
-		</>
-	);
+  const pathname = usePathname();
+  
+  return (
+    <>
+      {/* Logo bar - visible on all screens */}
+      <div className="w-full flex justify-between items-center h-[8vh] px-6">
+        <Link href="/" className="z-10">
+          <Image
+            src="/revnav.png"
+            alt="Revlient"
+            width={70}
+            height={70}
+            priority
+          />
+        </Link>
+      </div>
+
+      {/* Mobile icon navigation - only visible on small screens (mobile) */}
+      <div className="fixed bottom-0 left-0 right-0 bg-black bg-opacity-90 backdrop-blur-sm z-50 md:hidden">
+        <div className="flex justify-around items-center h-16 px-4">
+          {navItems.map((item) => {
+            const isActive = pathname === item.href;
+            const IconComponent = item.icon;
+            
+            return (
+              <Link
+                key={item.id}
+                href={item.href}
+                className="flex flex-col items-center justify-center relative"
+              >
+                <motion.div
+                  whileTap={{ scale: 0.9 }}
+                  className={`flex flex-col items-center justify-center p-2 ${
+                    isActive ? "text-white" : "text-gray-400"
+                  }`}
+                >
+                  <IconComponent size={24} />
+                  <span className="text-xs mt-1">{item.title}</span>
+                  
+                  {isActive && (
+                    <motion.div
+                      layoutId="activeTab"
+                      className="absolute -bottom-1 w-1.5 h-1.5 bg-white rounded-full"
+                      transition={{ duration: 0.3 }}
+                    />
+                  )}
+                </motion.div>
+              </Link>
+            );
+          })}
+        </div>
+      </div>
+    </>
+  );
 }
