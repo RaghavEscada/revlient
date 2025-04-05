@@ -6,8 +6,20 @@ import Image from 'next/image';
 export default function Hero() {
   const [loading, setLoading] = useState(true);
   const [contentReady, setContentReady] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
   
   useEffect(() => {
+    // Check if device is mobile
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+    
+    // Initial check
+    checkMobile();
+    
+    // Add event listener for window resize
+    window.addEventListener('resize', checkMobile);
+    
     // Initial loading animation
     const timer = setTimeout(() => {
       setLoading(false);
@@ -21,6 +33,7 @@ export default function Hero() {
     return () => {
       clearTimeout(timer);
       clearTimeout(contentTimer);
+      window.removeEventListener('resize', checkMobile);
     };
   }, []);
 
@@ -102,18 +115,18 @@ export default function Hero() {
       {/* Background gradient overlay for depth */}
       <div className="absolute inset-0 bg-gradient-radial top-1/9 from-gray-900/0 via-gray-900/10 to-black/80 z-0" />
       
-      {/* Globe with correct visible positioning - adjusted for better display */}
+      {/* Globe with responsive positioning - desktop vs mobile */}
       <motion.div
-        className="absolute inset-0 flex left-[150px] top-[380px] justify-center"
+        className={`absolute inset-0 flex ${isMobile ? 'items-center justify-center' : 'left-[150px] top-[380px] justify-center'}`}
+        style={isMobile ? {top: '60%', left: '55%', transform: 'translate(-50%, -50%)'} : {}}
         initial={{ opacity: 0 }}
         animate={{ opacity: contentReady ? 0.75 : 0 }}
         transition={{ duration: 0.8 }}
       >
-        <Globe className="scale-125" />
+        <Globe className={`${isMobile ? 'scale-150' : 'scale-125'}`} />
       </motion.div>
-      
-      {/* Content with creative reveal animations - adjusted to have more space for text */}
-      <div className="relative z-10 flex flex-col items-center justify-center h-full max-w-5xl mx-auto px-6 text-center -mt-20">
+      {/* Content with creative reveal animations - adjusted for mobile/desktop */}
+      <div className={`relative z-10 flex flex-col items-center justify-center h-full max-w-5xl mx-auto px-6 text-center ${isMobile ? '' : '-mt-20'}`}>
         {/* Logo instead of agency name */}
         <motion.div
           className="relative h-16 w-48 mb-6"
@@ -149,7 +162,7 @@ export default function Hero() {
           />
         </motion.div>
         
-        {/* Main headline with creative reveal - fixed to prevent text cutoff */}
+        {/* Main headline with creative reveal - adjusted for mobile */}
         <motion.div
           className="mb-10 overflow-visible"
           initial={{ opacity: 0 }}
@@ -157,7 +170,7 @@ export default function Hero() {
           transition={{ duration: 0.7, delay: 0.3 }}
         >
           <motion.h1
-            className="text-5xl md:text-7xl lg:text-8xl font-light text-white leading-tight tracking-tight"
+            className="text-4xl md:text-7xl lg:text-8xl font-light text-white leading-tight tracking-tight"
             initial={{ y: 50 }}
             animate={{ y: contentReady ? 0 : 50 }}
             transition={{ duration: 0.7, delay: 0.3 }}
@@ -168,7 +181,7 @@ export default function Hero() {
         
         {/* Subheading with fade-in plus slight blur animation */}
         <motion.p
-          className="text-xl md:text-2xl lg:text-3xl font-extralight text-white/70 max-w-3xl"
+          className="text-lg md:text-2xl lg:text-3xl font-extralight text-white/70 max-w-3xl"
           initial={{ opacity: 0, filter: "blur(10px)" }}
           animate={{
             opacity: contentReady ? 1 : 0,
