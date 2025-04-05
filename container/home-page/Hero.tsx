@@ -116,7 +116,7 @@ export default function Hero() {
       <div className="absolute inset-0 bg-gradient-radial top-1/9 from-gray-900/0 via-gray-900/10 to-black/80 z-0" />
       
       {/* Globe with responsive positioning - desktop vs mobile */}
-      <motion.div
+     <motion.div
         className={`absolute inset-0 flex ${isMobile ? 'items-center justify-center' : 'left-[150px] top-[380px] justify-center'}`}
         style={isMobile ? {top: '60%', left: '55%', transform: 'translate(-50%, -50%)'} : {}}
         initial={{ opacity: 0 }}
