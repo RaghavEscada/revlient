@@ -1,8 +1,9 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronLeft, ChevronRight, ChevronDown } from "lucide-react";
 import { Curve } from "@/components";
 import { LampDemoTeam } from "@/data/data";
+import Spline from "@splinetool/react-spline";
 
 const teamMembers = [
   {
@@ -39,6 +40,7 @@ const teamMembers = [
 
 export default function MeetOurTeam() {
   const [index, setIndex] = useState(0);
+  const [showScrollIndicator, setShowScrollIndicator] = useState(true);
 
   const prevSlide = () => {
     setIndex((prevIndex) => (prevIndex - 1 + teamMembers.length) % teamMembers.length);
@@ -48,9 +50,48 @@ export default function MeetOurTeam() {
     setIndex((prevIndex) => (prevIndex + 1) % teamMembers.length);
   };
 
+  // Hide scroll indicator after scrolling
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 100) {
+        setShowScrollIndicator(false);
+      } else {
+        setShowScrollIndicator(true);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
     <Curve backgroundColor={"#f1f1f1"}>
+      {/* Place Spline at the top, taking full viewport height */}
+      <div className="relative h-screen w-full">
+        <Spline
+          scene="https://prod.spline.design/qspgYwptxDY4ANel/scene.splinecode"
+          className="w-full h-full"
+        />
+        
+        {/* Scroll down indicator */}
+        <AnimatePresence>
+          {showScrollIndicator && (
+            <motion.div 
+              className="absolute bottom-10 text-red-500 left-[660px] flex flex-col items-center"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1, y: [0, 10, 0] }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 2, repeat: Infinity }}
+            >
+              <p className="text-lg md:text-xl font-medium mb-2">Scroll Down</p>
+              <ChevronDown className="w-6 h-6 md:w-8 md:h-8" />
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </div>
+      
       <LampDemoTeam />
+      
       <section className="relative min-h-screen w-full flex flex-col justify-center items-center bg-white text-black pt-24 px-4 md:px-0">
         <h1 className="absolute top-10 md:top-20 italic text-3xl md:text-5xl tracking-tighter font-light text-gray-700 text-center max-w-xs md:max-w-none">
           &quot;Alone, we shine. Together, we set the world ablaze with greatness&quot;

@@ -9,6 +9,7 @@ import { AnimatedTestimonialsDemo } from "@/data/data";
 import { LampDemoServ } from "@/data/data";
 
 
+
 export default function Services() {
   const containerRef = useRef(null);
   useEffect(() => {
@@ -33,10 +34,12 @@ export default function Services() {
   return (
     <>
       <Curve backgroundColor={"#f1f1f1"}>
-       
+      
           <LampDemoServ />
+          
       
         <div className="mb-20">
+    
           <Capibilyties />
         </div>
         <div className="mb-20">

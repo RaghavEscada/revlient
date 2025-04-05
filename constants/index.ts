@@ -16,10 +16,16 @@ export const navbarItems = [
       href: "/rev-works",
    },
    {
+      id: 4,
+      title: "Software",
+      href: "/software",
+   },
+   {
       id: 3,
       title: "Team",
       href: "/rev-team",
    },
+
    
    {
       id: 5,

@@ -9,6 +9,7 @@ const routes = {
 	"/services": "Craft is the heart of creativity.",
 	"/rev-works": "Mastery is in the details.",
 	"/rev-team": "Content is king, engagement is queen",
+	"/software" :"Bespoke software developed precisely to the needs",
 	"/contact": "Create. Refine. Repeat.",
 
 	
