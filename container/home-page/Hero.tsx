@@ -118,12 +118,12 @@ export default function Hero() {
       {/* Globe with responsive positioning - desktop vs mobile */}
      <motion.div
         className={`absolute inset-0 flex ${isMobile ? 'items-center justify-center' : 'left-[150px] top-[380px] justify-center'}`}
-        style={isMobile ? {top: '60%', left: '55%', transform: 'translate(-50%, -50%)'} : {}}
+        style={isMobile ? {top: '89%', left: '55%', transform: 'translate(-50%, -50%)'} : {}}
         initial={{ opacity: 0 }}
         animate={{ opacity: contentReady ? 0.75 : 0 }}
         transition={{ duration: 0.8 }}
       >
-        <Globe className={`${isMobile ? 'scale-150' : 'scale-125'}`} />
+         <Globe className={`${isMobile ? 'scale-[5]' : 'scale-[1.75]'}`} />
       </motion.div>
       {/* Content with creative reveal animations - adjusted for mobile/desktop */}
       <div className={`relative z-10 flex flex-col items-center justify-center h-full max-w-5xl mx-auto px-6 text-center ${isMobile ? '' : '-mt-20'}`}>
