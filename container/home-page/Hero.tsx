@@ -87,7 +87,7 @@ export default function Hero() {
                 }}
               >
                 <Image
-                  src="/revwhite.png"
+                  src="/revlogo.png"
                   alt="Revlient"
                   layout="fill"
              
@@ -135,7 +135,7 @@ export default function Hero() {
           transition={{ duration: 0.5 }}
         >
           <Image
-            src="/revlogo.png"
+            src="/revwhite.png"
             alt="Revlient"
             layout="fill"
             objectFit="contain"
