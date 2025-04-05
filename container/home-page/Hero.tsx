@@ -170,7 +170,7 @@ export default function Hero() {
           transition={{ duration: 0.7, delay: 0.3 }}
         >
           <motion.h1
-          className="text-4xl md:text-7xl lg:text-8xl xl:text-[180px] font-light text-white leading-tight tracking-tight"
+            className="text-4xl md:text-7xl lg:text-8xl xl:text-9xl 2xl:text-9xl  text-white leading-tight tracking-tight"
             initial={{ y: 50 }}
             animate={{ y: contentReady ? 0 : 50 }}
             transition={{ duration: 0.7, delay: 0.3 }}
