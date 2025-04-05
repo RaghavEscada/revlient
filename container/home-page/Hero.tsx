@@ -23,12 +23,12 @@ export default function Hero() {
     // Initial loading animation
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 1000);
+    }, 2000);
     
     // Slight delay for content reveal
     const contentTimer = setTimeout(() => {
       setContentReady(true);
-    }, 2300);
+    }, 2000);
     
     return () => {
       clearTimeout(timer);
@@ -123,7 +123,7 @@ export default function Hero() {
         animate={{ opacity: contentReady ? 0.75 : 0 }}
         transition={{ duration: 0.8 }}
       >
-         <Globe className={`${isMobile ? 'scale-[6]' : 'scale-[3]'}`} />
+         <Globe className={`${isMobile ? 'scale-[7]' : 'scale-[3]'}`} />
       </motion.div>
       {/* Content with creative reveal animations - adjusted for mobile/desktop */}
       <div className={`relative z-10 flex flex-col items-center justify-center h-full max-w-5xl mx-auto px-6 text-center ${isMobile ? '' : '-mt-20'}`}>
@@ -134,12 +134,14 @@ export default function Hero() {
           animate={{ opacity: contentReady ? 1 : 0, y: contentReady ? 0 : 15 }}
           transition={{ duration: 0.5 }}
         >
-          <Image
-            src="/revwhite.png"
-            alt="Revlient"
-            layout="fill"
-            objectFit="contain"
-          />
+            <Image
+    src="/revwhite.png"
+    alt="Revlient"
+    layout="fill"
+    objectFit="contain"
+    className="scale-[200%] sm:scale-150 md:scale-125" // Larger on mobile, progressively smaller on larger screens
+  />
+
         </motion.div>
         
         {/* Elegant divider with creative animation */}

@@ -15,7 +15,7 @@ export default function Clients() {
   return (
     <section className="padding-y">
       <h1 className="sub-heading padding-x font-medium font-NeueMontreal text-secondry pb-[50px]">
-        Clients' reviews
+        Our Clients
       </h1>
       
       <AnimatedTestimonialsDemo />

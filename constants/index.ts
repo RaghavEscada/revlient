@@ -15,11 +15,7 @@ export const navbarItems = [
       title: "Crafts",
       href: "/rev-works",
    },
-   {
-      id: 4,
-      title: "Software",
-      href: "/software",
-   },
+   
    {
       id: 3,
       title: "Team",
