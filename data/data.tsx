@@ -13,42 +13,42 @@ import { motion, useScroll, useTransform } from "motion/react";
 
 
 export function AnimatedTestimonialsDemo() {
-  const testimonials = [
+  const testimonials = [ {
+    quote:
+      "The scalability and performance have been game-changing for our organization. Highly recommend to any growing business.",
+    name: "Medcity International Academy",
+    designation: "VP of Technology at FutureNet",
+    src: "/b2.png",
+  },
     {
       quote:
         "The attention to detail and innovative features have completely transformed our workflow. This is exactly what we've been looking for.",
-      name: "Sarah Chen",
+      name: "Soumya Shayam",
       designation: "Product Manager at TechFlow",
-      src: "/team1.jpeg",
+      src: "/b5.png",
     },
     {
       quote:
         "Implementation was seamless and the results exceeded our expectations. The platform's flexibility is remarkable.",
-      name: "Michael Rodriguez",
+      name: "Black Onyx",
       designation: "CTO at InnovateSphere",
-      src: "/team3.jpeg",
+      src: "/b4.png",
     },
     {
       quote:
         "This solution has significantly improved our team's productivity. The intuitive interface makes complex tasks simple.",
-      name: "Emily Watson",
+      name: "Gloria Global Ventures LLP.",
       designation: "Operations Director at CloudScale",
-      src: "/team2.jpeg",
+      src: "/b1.png",
     },
     {
       quote:
         "Outstanding support and robust features. It's rare to find a product that delivers on all its promises.",
-      name: "James Kim",
+      name: "Bam Brush",
       designation: "Engineering Lead at DataPro",
-      src: "/team4.png",
+      src: "/b3.png",
     },
-    {
-      quote:
-        "The scalability and performance have been game-changing for our organization. Highly recommend to any growing business.",
-      name: "Lisa Thompson",
-      designation: "VP of Technology at FutureNet",
-      src: "/team2.jpeg",
-    },
+    
   ];
   return <AnimatedTestimonials testimonials={testimonials} />;
 
