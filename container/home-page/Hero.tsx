@@ -181,7 +181,7 @@ export default function Hero() {
         
         {/* Subheading with fade-in plus slight blur animation */}
         <motion.p
-          className="text-lg md:text-2xl lg:text-3xl font-extralight text-white/70 max-w-3xl"
+          className="text-lg md:text-4xl lg:text-3xl  text-red-600 font-semibold font-NeueMontreal  max-w-3xl"
           initial={{ opacity: 0, filter: "blur(10px)" }}
           animate={{
             opacity: contentReady ? 1 : 0,
@@ -189,7 +189,7 @@ export default function Hero() {
           }}
           transition={{ duration: 0.8, delay: 0.5 }}
         >
-          Transforming visions into digital experiences that resonate and endure
+          {/* Transforming visions into digital experiences that resonate and endure */}
         </motion.p>
       </div>
       
