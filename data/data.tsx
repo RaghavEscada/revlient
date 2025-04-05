@@ -97,19 +97,19 @@ export function TimelineDemo() {
           </p>
           <div className="mb-8">
             <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-lg md:text-xl">
-              ✅ Content Strategy & Branding
+              𝌞 Content Strategy & Branding
             </div>
             <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-lg md:text-xl">
-              ✅ Website & Tech Development
+              🖥️ Website & Tech Development
             </div>
             <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-lg md:text-xl">
-              ✅ Social Media & Community Management
+              📱 Social Media & Community Management
             </div>
             <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-lg md:text-xl">
-              ✅ Paid Marketing & Ad Campaigns
+              💸 Paid Marketing & Ad Campaigns
             </div>
             <div className="flex gap-2 items-center text-neutral-700 dark:text-neutral-300 text-lg md:text-xl">
-              ✅ Performance Analytics & Optimization
+              📈 Performance Analytics & Optimization
             </div>
           </div>
           <div className="flex justify-end gap-4">
