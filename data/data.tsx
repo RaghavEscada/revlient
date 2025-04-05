@@ -15,37 +15,37 @@ import { motion, useScroll, useTransform } from "motion/react";
 export function AnimatedTestimonialsDemo() {
   const testimonials = [ {
     quote:
-      "The scalability and performance have been game-changing for our organization. Highly recommend to any growing business.",
+      "Medcity International is a leading pan-India institute for IELTS, German, and language training, with expert study abroad and India services.",
     name: "Medcity International Academy",
-    designation: "VP of Technology at FutureNet",
+    designation: "Education",
     src: "/b2.png",
   },
     {
       quote:
-        "The attention to detail and innovative features have completely transformed our workflow. This is exactly what we've been looking for.",
+        "Soumya Shyam is a renowned celebrity makeup artist, trusted by top names across India for her signature style and flawless artistry.",
       name: "Soumya Shayam",
-      designation: "Product Manager at TechFlow",
+      designation: "Beauty Artist",
       src: "/b5.png",
     },
     {
       quote:
-        "Implementation was seamless and the results exceeded our expectations. The platform's flexibility is remarkable.",
+        "BlackOnyx International LLC recruits talent from India, Oman, and Dubai, supplying top-tier staff to leading hotels and companies in Dubai and Oman, with strong expertise in hospitality and cleaning services.",
       name: "Black Onyx",
-      designation: "CTO at InnovateSphere",
+      designation: "Recruiting Agency",
       src: "/b4.png",
     },
     {
       quote:
-        "This solution has significantly improved our team's productivity. The intuitive interface makes complex tasks simple.",
+        "Gloria Global Ventures LLP specializes in IELTS, German, and language training, delivering focused, high-quality coaching to help students achieve global language proficiency.",
       name: "Gloria Global Ventures LLP.",
-      designation: "Operations Director at CloudScale",
+      designation: "Education",
       src: "/b1.png",
     },
     {
       quote:
-        "Outstanding support and robust features. It's rare to find a product that delivers on all its promises.",
+        "BamBrush specializes in eco-friendly bamboo brushes, supplying sustainable solutions to resorts and exporting globally.",
       name: "Bam Brush",
-      designation: "Engineering Lead at DataPro",
+      designation: "natural product",
       src: "/b3.png",
     },
     
