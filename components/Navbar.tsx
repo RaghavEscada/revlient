@@ -23,13 +23,13 @@ export default function Navbar() {
   return (
     <>
       <motion.nav
-        className="w-full h-[8vh] bg-white bg-opacity-50 rounded-2xl padding-x fixed top-0 left-0 z-50 backdrop-blur-[7px] flex items-center justify-between sm:hidden xm:hidden md:hidden"
+        className="w-full h-[8vh] bg-slate-400 bg-opacity-50 rounded-2xl padding-x fixed top-0 left-0 z-50 backdrop-blur-[7px] flex items-center justify-between sm:hidden xm:hidden md:hidden"
         animate={hidden ? "hidden" : "visible"}
       >
         <div className="w-[60%]">
           <Link href={"/"}>
             <Image
-              src="/revnav.png"
+              src="/revlogo.png"
               alt="nuke logo"
               width={110}
               height={140}
@@ -40,7 +40,7 @@ export default function Navbar() {
           {navbarItems.map((item) => (
             <Link
               key={item.id}
-              className={`w-fit paragraph font-medium font-NeueMontreal text-secondry capitalize flex flex-col hover ${
+              className={`w-fit paragraph font-medium font-NeueMontreal text-white capitalize flex flex-col hover ${
                 item.id === 5 && "ml-auto"
               }`}
               href={item.href}

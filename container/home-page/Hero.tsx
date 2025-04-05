@@ -87,7 +87,7 @@ export default function Hero() {
                 }}
               >
                 <Image
-                  src="/revlogo.png"
+                  src="/revwhite.png"
                   alt="Revlient"
                   layout="fill"
                   objectFit="contain"
