@@ -90,7 +90,7 @@ export default function Hero() {
                   src="/revwhite.png"
                   alt="Revlient"
                   layout="fill"
-                  objectFit="contain"
+             
                 />
               </motion.div>
               
