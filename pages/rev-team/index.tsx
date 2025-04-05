@@ -101,9 +101,9 @@ export default function MeetOurTeam() {
       
       <LampDemoTeam />
       
-      <section className="relative min-h-screen w-full flex flex-col justify-center items-center bg-white text-black pt-24 px-4">
+      <section className="relative min-h-screen w-full flex flex-col justify-center items-center bg-white text-black pt-32 px-4">
         {/* Quote - centered and responsive on all devices */}
-        <h1 className="absolute top-10 md:top-20 italic text-2xl sm:text-3xl md:text-4xl lg:text-5xl tracking-tighter font-light text-gray-700 text-center w-full max-w-lg mx-auto px-4">
+        <h1 className="absolute top-16 md:top-28 italic text-2xl sm:text-3xl md:text-4xl lg:text-5xl tracking-tighter font-light text-gray-700 text-center w-full max-w-xl mx-auto px-4 mb-16">
           &quot;Alone, we shine. Together, we set the world ablaze with greatness&quot;
         </h1>
 
@@ -114,59 +114,44 @@ export default function MeetOurTeam() {
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 0.9 }}
             transition={{ duration: 0.6, ease: "easeInOut" }}
-            className="flex flex-col items-center text-center max-w-4xl w-full px-4 sm:px-6 md:px-8"
+            className="flex flex-col items-center text-center max-w-4xl w-full px-4 sm:px-6 md:px-8 mt-16 md:mt-24"
           >
             <motion.img
               src={teamMembers[index].image}
               alt={teamMembers[index].name}
-              className="w-52 h-52 sm:w-60 sm:h-60 md:w-72 md:h-72 lg:w-80 lg:h-80 rounded-3xl object-cover shadow-lg border border-gray-300 mb-6"
+              className="w-52 h-52 sm:w-60 sm:h-60 md:w-72 md:h-72 lg:w-80 lg:h-80 rounded-3xl object-cover shadow-lg border border-gray-300 mb-12"
               whileHover={{ scale: 1.05 }}
             />
-            <div className="flex flex-col items-center max-w-sm">
+            <div className="flex flex-col items-center max-w-sm mt-4">
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold">{teamMembers[index].name}</h2>
-              <p className="text-base md:text-lg text-gray-600 mt-2 uppercase tracking-wide">
+              <p className="text-base md:text-lg text-gray-600 mt-4 uppercase tracking-wide">
                 {teamMembers[index].role}
               </p>
-              <p className="mt-4 text-gray-700 leading-relaxed text-sm md:text-base">
+              <p className="mt-8 text-gray-700 leading-relaxed text-sm md:text-base">
                 {teamMembers[index].description}
               </p>
             </div>
           </motion.div>
         </AnimatePresence>
 
-        {/* Navigation buttons - responsive spacing and sizing */}
-        <div className="absolute bottom-24 sm:bottom-20 md:bottom-16 w-full flex justify-center gap-2 px-4">
-          <div className="flex flex-wrap justify-center gap-2 max-w-full overflow-x-auto py-2">
-            {teamMembers.map((member, i) => (
-              <button
-                key={i}
-                onClick={() => setIndex(i)}
-                className={`px-2 py-1 text-xs sm:px-3 sm:py-1 rounded-lg font-semibold transition whitespace-nowrap ${
-                  index === i ? "bg-black text-white" : "bg-gray-200 text-gray-600"
-                }`}
-              >
-                {member.name}
-              </button>
-            ))}
-          </div>
-        </div>
-
-        {/* Arrow navigation - better placement for mobile */}
-        <div className="absolute bottom-6 w-full flex justify-center gap-8 sm:gap-16 md:gap-24 lg:gap-64">
+        {/* Arrow navigation - horizontally split on both sides */}
+        <div className="absolute left-4 sm:left-8 md:left-12 lg:left-24 top-1/2 transform -translate-y-1/2">
           <button
             onClick={prevSlide}
-            className="p-2 sm:p-3 rounded-full bg-gray-200 hover:bg-gray-300 transition shadow-md"
+            className="p-3 sm:p-4 rounded-full bg-gray-200 hover:bg-gray-300 transition shadow-md"
             aria-label="Previous team member"
           >
-            <ChevronLeft className="w-5 h-5 sm:w-6 sm:h-6 text-gray-700" />
+            <ChevronLeft className="w-6 h-6 sm:w-7 sm:h-7 text-gray-700" />
           </button>
-
+        </div>
+        
+        <div className="absolute right-4 sm:right-8 md:right-12 lg:right-24 top-1/2 transform -translate-y-1/2">
           <button
             onClick={nextSlide}
-            className="p-2 sm:p-3 rounded-full bg-gray-200 hover:bg-gray-300 transition shadow-md"
+            className="p-3 sm:p-4 rounded-full bg-gray-200 hover:bg-gray-300 transition shadow-md"
             aria-label="Next team member"
           >
-            <ChevronRight className="w-5 h-5 sm:w-6 sm:h-6 text-gray-700" />
+            <ChevronRight className="w-6 h-6 sm:w-7 sm:h-7 text-gray-700" />
           </button>
         </div>
       </section>
