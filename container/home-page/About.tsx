@@ -3,9 +3,9 @@ import { Instagram, Linkedin, MessageCircle, ChevronRight } from "lucide-react";
 import { FeaturesSectionDemo } from "@/components/ui/bentogrid";
 
 const socialLinks = [
-  { id: 1, title: "Instagram", href: "https://instagram.com", icon: <Instagram size={20} /> },
+  { id: 1, title: "Instagram", href: "https://www.instagram.com/revlient/", icon: <Instagram size={20} /> },
   { id: 2, title: "LinkedIn", href: "https://linkedin.com", icon: <Linkedin size={20} /> },
-  { id: 3, title: "WhatsApp", href: "https://wa.me/yourphonenumber", icon: <MessageCircle size={20} /> },
+  { id: 3, title: "WhatsApp", href: "https://wa.me/+916238714197?text=Dear%20Revlient%20Marketing%20Team%2C%20I%20hope%20you%20are%20doing%20well.%20I%20am%20interested%20in%20learning%20more%20about%20your%20services%20and%20ongoing%20projects.%20Could%20you%20please%20provide%20more%20details%20or%20let%20me%20know%20a%20suitable%20time%20to%20discuss%20further%3F%20Looking%20forward%20to%20your%20response.%20Best%20regards%2C%20Client", icon: <MessageCircle size={20} /> },
 ];
 
 const services = [
