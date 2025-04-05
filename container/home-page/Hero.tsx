@@ -170,12 +170,12 @@ export default function Hero() {
           transition={{ duration: 0.7, delay: 0.3 }}
         >
           <motion.h1
-            className="text-4xl md:text-7xl lg:text-8xl font-light text-white leading-tight tracking-tight"
+           className="text-4xl md:text-7xl lg:text-8xl xl:text-9xl 2xl:text-9xl font-light text-white leading-tight tracking-tight"
             initial={{ y: 50 }}
             animate={{ y: contentReady ? 0 : 50 }}
             transition={{ duration: 0.7, delay: 0.3 }}
           >
-            We Craft Digital <span className="font-normal">Legacies</span>
+            We Craft Digital Legacies
           </motion.h1>
         </motion.div>
         
