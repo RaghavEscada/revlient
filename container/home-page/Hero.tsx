@@ -123,7 +123,7 @@ export default function Hero() {
         animate={{ opacity: contentReady ? 0.75 : 0 }}
         transition={{ duration: 0.8 }}
       >
-         <Globe className={`${isMobile ? 'scale-[9]' : 'scale-[3]'}`} />
+         <Globe className={`${isMobile ? 'scale-[6]' : 'scale-[3]'}`} />
       </motion.div>
       {/* Content with creative reveal animations - adjusted for mobile/desktop */}
       <div className={`relative z-10 flex flex-col items-center justify-center h-full max-w-5xl mx-auto px-6 text-center ${isMobile ? '' : '-mt-20'}`}>
