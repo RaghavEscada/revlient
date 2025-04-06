@@ -254,7 +254,7 @@ export default function CreativeServicesGrid() {
 
               {/* Contact Button with Dynamic Color */}
               <button
-                onClick={closeModal}
+                onClick={() => window.location.href = "/contact"}
                 className={`w-full py-4 px-6 ${selectedService.color} text-white text-lg font-bold 
                   rounded-xl transition duration-300 hover:opacity-90 focus:outline-none 
                   focus:ring-2 focus:ring-offset-2 focus:ring-white`}
