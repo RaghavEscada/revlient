@@ -4,10 +4,17 @@ import { usePathname } from "next/navigation";
 import { HiOutlineUserGroup } from "react-icons/hi";
 import { MdOutlineDesignServices } from "react-icons/md";
 import { AiOutlineFundProjectionScreen } from "react-icons/ai";
+import { AiOutlineHome } from "react-icons/ai";
 import { motion } from "framer-motion";
 
 // Define navigation items with icons
 const navItems = [
+  {
+    id: 0,
+    title: "Home",
+    href: "/",
+    icon: AiOutlineHome
+  },
   {
     id: 1,
     title: "Team",
