@@ -8,7 +8,7 @@ const REALISTIC_GLOBE_CONFIG: COBEOptions = {
   width: 600 * 2,  // Increased from 800 for higher resolution
   height: 600 * 2, // Increased from 800 for higher resolution
   onRender: () => { },
-  devicePixelRatio: 3.42, // Increased from 2.5 for sharper rendering
+  devicePixelRatio: 3.41, // Increased from 2.5 for sharper rendering
   phi: 0,
   theta: 0,
   dark: 1,
