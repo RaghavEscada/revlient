@@ -3,24 +3,25 @@ import createGlobe, { COBEOptions } from "cobe";
 import { useMotionValue, useSpring } from "motion/react";
 import { useEffect, useRef } from "react";
 import { cn } from "@/lib/utils";
-
 const MOVEMENT_DAMPING = 1400;
-
 const REALISTIC_GLOBE_CONFIG: COBEOptions = {
-  width: 800,
-  height: 800,
-  onRender: () => {},
-  devicePixelRatio: 2.5, // Increased for better detail
+  width: 1200,  // Increased from 800 for higher resolution
+  height: 1200, // Increased from 800 for higher resolution
+  onRender: () => { },
+  devicePixelRatio: 3.1, // Increased from 2.5 for sharper rendering
   phi: 0,
-  theta: 0.3,
-  dark: 0,
-  diffuse: 0.5, // Increased for more realistic lighting
+  theta: 0,
+  dark: 1,
+  diffuse: 1.2,
   mapSamples: 16000,
-  mapBrightness: 1.2,
-  baseColor: [1, 1, 1],
-  markerColor: [251 / 255, 100 / 255, 21 / 255],
+  mapBrightness: 6,
+  baseColor: [0.3, 0.3, 0.3],
+  markerColor: [0.1, 0.8, 1],
   glowColor: [1, 1, 1],
   markers: [
+    // longitude latitude
+    { location: [37.7595, -122.4367], size: 0.03 },
+    { location: [40.7128, -74.006], size: 0.1 },
     { location: [14.5995, 120.9842], size: 0.03 },
     { location: [19.076, 72.8777], size: 0.1 },
     { location: [23.8103, 90.4125], size: 0.05 },
@@ -33,7 +34,6 @@ const REALISTIC_GLOBE_CONFIG: COBEOptions = {
     { location: [41.0082, 28.9784], size: 0.06 },
   ],
 };
-
 export function Globe({
   className,
   config = REALISTIC_GLOBE_CONFIG,
@@ -47,21 +47,18 @@ export function Globe({
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const pointerInteracting = useRef<number | null>(null);
   const pointerInteractionMovement = useRef(0);
-
   const r = useMotionValue(0);
   const rs = useSpring(r, {
     mass: 1,
     damping: 30,
     stiffness: 100,
   });
-
   const updatePointerInteraction = (value: number | null) => {
     pointerInteracting.current = value;
     if (canvasRef.current) {
       canvasRef.current.style.cursor = value !== null ? "grabbing" : "grab";
     }
   };
-
   const updateMovement = (clientX: number) => {
     if (pointerInteracting.current !== null) {
       const delta = clientX - pointerInteracting.current;
@@ -69,41 +66,41 @@ export function Globe({
       r.set(r.get() + delta / MOVEMENT_DAMPING);
     }
   };
-
   useEffect(() => {
     const onResize = () => {
       if (canvasRef.current) {
         widthRef.current = canvasRef.current.offsetWidth;
       }
     };
-
     window.addEventListener("resize", onResize);
     onResize();
-
+    
+    // Apply high-quality rendering properties
+    if (canvasRef.current) {
+      canvasRef.current.style.imageRendering = "high-quality";
+    }
+    
     const globe = createGlobe(canvasRef.current!, {
       ...config,
-      width: widthRef.current * 2,
-      height: widthRef.current * 2,
+      width: widthRef.current * 2.5,  // Increased multiplier for sharper rendering
+      height: widthRef.current * 2.5, // Increased multiplier for sharper rendering
       onRender: (state) => {
         if (!pointerInteracting.current) phiRef.current += 0.005;
         state.phi = phiRef.current + rs.get();
-        state.width = widthRef.current * 2;
-        state.height = widthRef.current * 2;
+        state.width = widthRef.current * 2.5;  // Match the above multiplier
+        state.height = widthRef.current * 2.5; // Match the above multiplier
       },
     });
-
     setTimeout(() => {
       if (canvasRef.current) {
         canvasRef.current.style.opacity = "1";
       }
     }, 0);
-    
     return () => {
       globe.destroy();
       window.removeEventListener("resize", onResize);
     };
   }, [rs, config]);
-
   return (
     <div
       className={cn(
