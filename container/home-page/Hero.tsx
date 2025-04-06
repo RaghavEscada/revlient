@@ -117,7 +117,7 @@ export default function Hero() {
       
       {/* Globe with responsive positioning - desktop vs mobile */}
      <motion.div
-        className={`absolute inset-0 flex ${isMobile ? 'items-center justify-center' : 'left-[420px] top-[400px] justify-center'}`}
+        className={`absolute inset-0 flex ${isMobile ? 'items-center justify-center' : 'left-[475px] top-[400px] justify-center'}`}
         style={isMobile ? {top: '89%', left: '45%', transform: 'translate(-50%, -50%)'} : {}}
         initial={{ opacity: 0 }}
         animate={{ opacity: contentReady ? 0.75 : 0 }}
