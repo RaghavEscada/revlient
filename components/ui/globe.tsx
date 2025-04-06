@@ -5,10 +5,10 @@ import { useEffect, useRef } from "react";
 import { cn } from "@/lib/utils";
 const MOVEMENT_DAMPING = 1400;
 const REALISTIC_GLOBE_CONFIG: COBEOptions = {
-  width: 1200,  // Increased from 800 for higher resolution
-  height: 1200, // Increased from 800 for higher resolution
+  width: 600 * 2,  // Increased from 800 for higher resolution
+  height: 600 * 2, // Increased from 800 for higher resolution
   onRender: () => { },
-  devicePixelRatio: 3.1, // Increased from 2.5 for sharper rendering
+  devicePixelRatio: 3.41, // Increased from 2.5 for sharper rendering
   phi: 0,
   theta: 0,
   dark: 1,
