@@ -41,6 +41,7 @@ const teamMembers = [
 export default function MeetOurTeam() {
   const [index, setIndex] = useState(0);
   const [showScrollIndicator, setShowScrollIndicator] = useState(true);
+  const [isSplineLoaded, setIsSplineLoaded] = useState(false);
 
   const prevSlide = () => {
     setIndex((prevIndex) => (prevIndex - 1 + teamMembers.length) % teamMembers.length);
@@ -64,13 +65,60 @@ export default function MeetOurTeam() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  // Function to handle when Spline is loaded
+  const handleSplineLoad = () => {
+    setIsSplineLoaded(true);
+  };
+
   return (
     <Curve backgroundColor={"#f1f1f1"}>
       {/* Spline container - made responsive */}
       <div className="relative w-full h-screen">
+        {/* Loading animation */}
+        <AnimatePresence>
+          {!isSplineLoaded && (
+            <motion.div 
+              className="absolute inset-0 z-20 bg-white flex flex-col justify-center items-center"
+              initial={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.5 }}
+            >
+              <motion.img 
+                src="/revnav.png" 
+                alt="RevLogo"
+                className="h-24 w-auto object-contain mb-6"
+                animate={{ 
+                  scale: [1, 1.1, 1],
+                  rotate: [0, 5, -5, 0]
+                }}
+                transition={{ 
+                  duration: 2,
+                  repeat: Infinity,
+                  ease: "easeInOut"
+                }}
+              />
+              <motion.div
+                className="w-64 h-2 bg-gray-200 rounded-full overflow-hidden mt-4"
+              >
+                <motion.div
+                  className="h-full bg-black rounded-full"
+                  animate={{ x: [-256, 0] }}
+                  transition={{ 
+                    duration: 1.5, 
+                    repeat: Infinity,
+                    ease: "easeInOut"
+                  }}
+                />
+              </motion.div>
+              <p className="mt-4 text-gray-600 font-medium animate-pulse">RevBot Loading...</p>
+            </motion.div>
+          )}
+        </AnimatePresence>
+        
         <Spline
           scene="https://prod.spline.design/qspgYwptxDY4ANel/scene.splinecode"
           className="w-full h-full"
+          onLoad={handleSplineLoad}
         />
         
         {/* Full-width black footer with centered logo */}
@@ -84,7 +132,7 @@ export default function MeetOurTeam() {
         
         {/* Centered scroll indicator for all screen sizes */}
         <AnimatePresence>
-          {showScrollIndicator && (
+          {showScrollIndicator && isSplineLoaded && (
             <motion.div 
               className="absolute bottom-10 text-red-500 left-1/2 transform -translate-x-1/2 flex flex-col items-center"
               initial={{ opacity: 0 }}
